@@ -55,6 +55,7 @@ CREATE TABLE products (
     name VARCHAR(50) NOT NULL,
     picture VARCHAR(255) NOT NULL,
     description TEXT NOT NULL,
+    quantity INT,
     id_category TINYINT,
     id_brands SMALLINT,
     FOREIGN KEY (id_category) REFERENCES subcategory(id),
