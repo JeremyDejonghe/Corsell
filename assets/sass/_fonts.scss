@@ -1,0 +1,24 @@
+/* arabic */
+@font-face {
+    font-family: 'Rakkas';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/Rakkas.woff2") format('woff2');
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Rakkas-latin-ext';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/Rakkas_latin-ext.woff2") format('woff2');
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Rakkas-latin';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/Rakkas_latin.woff2") format('woff2');
+  }
