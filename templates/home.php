@@ -1,3 +1,8 @@
 <?php 
-require_once("../assets/tpl/header.php");
+$home = true;
+require_once("header.php");
+?>
+
+<?php 
+require_once("footer.php");
 ?>
