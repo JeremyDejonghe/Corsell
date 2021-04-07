@@ -398,4 +398,19 @@ footer .footer-block p {
   font-size: 1.6rem;
 }
 
+header .nav1 {
+  display: flex;
+  background-color: rgba(181, 127, 65, 0.69);
+  color: #2D2D2D;
+}
+header .nav2 {
+  background-color: #063D40;
+  color: #E8EAE6;
+  display: flex;
+}
+header .nav2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=main.css.map */

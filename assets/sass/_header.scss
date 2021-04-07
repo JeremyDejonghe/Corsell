@@ -1,0 +1,17 @@
+header {
+
+    .nav1 {
+        display: flex;
+        background-color: $primary_color;
+        color: $fonts_primary_color;
+    }
+    .nav2 {
+        background-color: $secondary_color;
+        color: $fonts_secondary_color;
+        display: flex;
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+}
