@@ -25,6 +25,7 @@ DROP TABLE IF EXISTS `brands`;
 CREATE TABLE `brands` (
   `id` smallint(6) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
+  `picture` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -48,6 +49,7 @@ DROP TABLE IF EXISTS `category`;
 CREATE TABLE `category` (
   `id` tinyint(4) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
+  `picture` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -155,11 +157,14 @@ CREATE TABLE `products` (
   `quantity` int(11) DEFAULT NULL,
   `id_category` tinyint(4) DEFAULT NULL,
   `id_brands` smallint(6) DEFAULT NULL,
+  `id_subcategory` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`id`),
+  KEY `id_subcategory` (`id_subcategory`),
   KEY `id_category` (`id_category`),
   KEY `id_brands` (`id_brands`),
-  CONSTRAINT `products_ibfk_1` FOREIGN KEY (`id_category`) REFERENCES `subcategory` (`id`),
-  CONSTRAINT `products_ibfk_2` FOREIGN KEY (`id_brands`) REFERENCES `brands` (`id`)
+  CONSTRAINT `products_ibfk_1` FOREIGN KEY (`id_subcategory`) REFERENCES `subcategory` (`id`),
+  CONSTRAINT `products_ibfk_2` FOREIGN KEY (`id_category`) REFERENCES `category` (`id`),
+  CONSTRAINT `products_ibfk_3` FOREIGN KEY (`id_brands`) REFERENCES `brands` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -208,7 +213,10 @@ DROP TABLE IF EXISTS `subcategory`;
 CREATE TABLE `subcategory` (
   `id` tinyint(4) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`)
+  `id_category` tinyint(4) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `id_category` (`id_category`),
+  CONSTRAINT `subcategory_ibfk_1` FOREIGN KEY (`id_category`) REFERENCES `category` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -237,10 +245,10 @@ CREATE TABLE `users` (
   `age` tinyint(4) NOT NULL,
   `avatar` varchar(50) DEFAULT NULL,
   `prime` tinyint(1) DEFAULT 0,
-  `id_category` tinyint(4) NOT NULL,
+  `id_users_category` tinyint(4) NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `id_category` (`id_category`),
-  CONSTRAINT `users_ibfk_1` FOREIGN KEY (`id_category`) REFERENCES `category` (`id`)
+  KEY `id_users_category` (`id_users_category`),
+  CONSTRAINT `users_ibfk_1` FOREIGN KEY (`id_users_category`) REFERENCES `users_category` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -251,6 +259,29 @@ CREATE TABLE `users` (
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users_category`
+--
+
+DROP TABLE IF EXISTS `users_category`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users_category` (
+  `id` tinyint(4) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users_category`
+--
+
+LOCK TABLES `users_category` WRITE;
+/*!40000 ALTER TABLE `users_category` DISABLE KEYS */;
+/*!40000 ALTER TABLE `users_category` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -266,4 +297,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-04-07 10:02:58
+-- Dump completed on 2021-04-07 12:19:57

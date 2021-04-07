@@ -2,7 +2,7 @@ CREATE DATABASE corsell_db;
 
 use corsell_db;
 
-CREATE TABLE category (
+CREATE TABLE users_category (
     id TINYINT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50) NOT NULL
 );
@@ -16,8 +16,8 @@ CREATE TABLE users (
     age TINYINT NOT NULL,
     avatar VARCHAR(50),
     prime BOOLEAN DEFAULT false,
-    id_category TINYINT NOT NULL,
-    FOREIGN KEY (id_category) REFERENCES category(id)
+    id_users_category TINYINT NOT NULL,
+    FOREIGN KEY (id_users_category) REFERENCES users_category(id)
 );
 
 CREATE TABLE payment (
@@ -42,12 +42,21 @@ CREATE TABLE commands (
 
 CREATE TABLE brands (
     id SMALLINT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(50) NOT NULL
+    name VARCHAR(50) NOT NULL,
+    picture VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE category (
+    id TINYINT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    picture VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE subcategory (
     id TINYINT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(50) NOT NULL
+    name VARCHAR(50) NOT NULL,
+    id_category TINYINT,
+    FOREIGN KEY (id_category) REFERENCES category(id)
 );
 
 CREATE TABLE products (
@@ -60,7 +69,9 @@ CREATE TABLE products (
     quantity INT,
     id_category TINYINT,
     id_brands SMALLINT,
-    FOREIGN KEY (id_category) REFERENCES subcategory(id),
+    id_subcategory TINYINT,
+    FOREIGN KEY (id_subcategory) REFERENCES subcategory(id),
+    FOREIGN KEY (id_category) REFERENCES category(id),
     FOREIGN KEY (id_brands) REFERENCES brands(id)
 );
 
