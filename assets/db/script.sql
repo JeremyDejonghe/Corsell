@@ -57,6 +57,7 @@ CREATE TABLE products (
     description TEXT NOT NULL,
     price DECIMAL(7,2) NOT NULL,
     promo INT,
+    quantity INT,
     id_category TINYINT,
     id_brands SMALLINT,
     FOREIGN KEY (id_category) REFERENCES subcategory(id),

@@ -152,6 +152,7 @@ CREATE TABLE `products` (
   `description` text NOT NULL,
   `price` decimal(7,2) NOT NULL,
   `promo` int(11) DEFAULT NULL,
+  `quantity` int(11) DEFAULT NULL,
   `id_category` tinyint(4) DEFAULT NULL,
   `id_brands` smallint(6) DEFAULT NULL,
   PRIMARY KEY (`id`),
