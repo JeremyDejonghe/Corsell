@@ -16,17 +16,22 @@ if (isset($_GET["page"]) && !empty($_GET["page"])) {
 
 $data = array(
 	"home" => array(
-        "model" => "HomeModel", 
-        "view" => "HomeView", 
-        "controller" => "HomeController"
-    )
+		"model" => "HomeModel",
+		"view" => "HomeView",
+		"controller" => "HomeController"
+	),
+	"categories" => array(
+		"model" => "CategoriesModel",
+		"view" => "CategoriesView",
+		"controller" => "CategoriesController"
+	)
 );
 
 $find = false;
-foreach($data as $key => $components){
+foreach ($data as $key => $components) {
 	if ($page == $key) {
 		$find = true;
-		
+
 		$model = $components["model"];
 		$view = $components["view"];
 		$controller = $components["controller"];
