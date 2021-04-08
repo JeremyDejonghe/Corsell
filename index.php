@@ -19,7 +19,12 @@ $data = array(
         "model" => "HomeModel", 
         "view" => "HomeView", 
         "controller" => "HomeController"
-    )
+    ),
+	"product" => array(
+		"model" => "ProductModel",
+		"view" => "ProductView",
+		"controller" => "ProductController"
+	)
 );
 
 $find = false;
