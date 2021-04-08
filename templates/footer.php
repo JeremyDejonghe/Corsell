@@ -14,7 +14,7 @@
         <p class="-title">Besoin d'aide ?</p>
         <a href=""><p>Service Client</p></a>
         <a href=""><p>Accessibilité</p></a>
-        <a href=""><p>Cor-sell P</p></a>
+        <a href=""><p>Cor-sell Erre</p></a>
     </div>
 </footer>
 

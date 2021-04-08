@@ -2,6 +2,7 @@ footer {
     background-color: $secondary_color;
     color: $fonts_secondary_color;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 3rem;
 
