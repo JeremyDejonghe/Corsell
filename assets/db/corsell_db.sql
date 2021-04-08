@@ -155,6 +155,7 @@ CREATE TABLE `products` (
   `price` decimal(7,2) NOT NULL,
   `promo` int(11) DEFAULT NULL,
   `quantity` int(11) DEFAULT NULL,
+  `sell_number` int(11) DEFAULT NULL,
   `id_category` tinyint(4) DEFAULT NULL,
   `id_brands` smallint(6) DEFAULT NULL,
   `id_subcategory` tinyint(4) DEFAULT NULL,
@@ -243,6 +244,8 @@ CREATE TABLE `users` (
   `pseudo` varchar(100) DEFAULT NULL,
   `adress` text NOT NULL,
   `age` tinyint(4) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(255) NOT NULL,
   `avatar` varchar(50) DEFAULT NULL,
   `prime` tinyint(1) DEFAULT 0,
   `id_users_category` tinyint(4) NOT NULL,
@@ -297,4 +300,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-04-07 12:19:57
+-- Dump completed on 2021-04-08  9:46:19
