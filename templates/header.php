@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="assets/img/Cor-Sell_Logo.png" alt="">
+            <a href="/corsell"><img src="assets/img/Cor-Sell_Logo.png" alt=""></a>
         </div>
         <div class="nav1">
 
@@ -22,32 +22,33 @@
                 <h1>Cor-Sell</h1>
             </div>
             <div class="search">
-                <input type="text">
+                <input type="text" placeholder="Rechercher un produit">
             </div>
             <div class="bonjour">
-                <div>
-                    <p>Bonjour, Identifiez-vous</p>
-                </div>
-                <div>
+                <a href="http://">
+                    <p>Bonjour, <span>Identifiez-vous</span></p>
+
                     <p>Compte</p>
-                </div>
+                </a>
             </div>
             <div class="command">
-                <div>
+                <a href="">
                     <p>Vos</p>
-                </div>
-                <div>
+
                     <p>Commandes</p>
-                </div>
+                </a>
             </div>
             <div class="panier">
-                <figure>
-                    <img src="" alt="">
-                </figure>
-                <div>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="iconify iconify--mdi" width="50" height="50" viewBox="0 0 24 24">
+                        <path d="M5 4h14a3 3 0 013 3v4h-7v-1H9v1H2V7a3 3 0 013-3m6 7h2v2h-2v-2m-9 1h7v1l2 2h2l2-2v-1h7v8H2v-8z" fill="currentColor" />
+                    </svg>
                     <p>Coffre</p>
-                </div>
+                </a>
             </div>
+            <a href=""><svg class="note" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="iconify iconify--mdi" width="32" height="32" viewBox="0 0 24 24">
+                    <path d="M12 3v10.55A4 4 0 1014 17V7h4V3m-1.5 17a1.5 1.5 0 111.5-1.5 1.5 1.5 0 01-1.5 1.5z" fill="currentColor" />
+                </svg></a>
         </div>
         <div class="nav2">
             <a href="">
@@ -58,6 +59,9 @@
             </a>
             <a href="">
                 <p>Dernières Nouveautées</p>
+            </a>
+            <a href="">
+                <p>Les essentiels du pirate</p>
             </a>
             <a href="">
                 <p>Navires</p>
@@ -74,5 +78,6 @@
             <a href="">
                 <p>Nos Marques</p>
             </a>
+
         </div>
     </header>
