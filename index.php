@@ -19,7 +19,12 @@ $data = array(
         "model" => "HomeModel", 
         "view" => "HomeView", 
         "controller" => "HomeController"
-    )
+    ),
+	"subcategorydetail"=>array(
+		"model"=>"SubcategorydetailModel",
+		"view"=>"SubcategorydetailView",
+		"controller"=>"SubcategorydetailController"
+	)
 );
 
 $find = false;
