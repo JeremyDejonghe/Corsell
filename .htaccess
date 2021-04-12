@@ -1,0 +1,8 @@
+#Activation du module de réécriture d'url :
+RewriteEngine on
+
+# Règle de réécriture d'url :
+RewriteRule ^categories$ ./index.php?page=categories
+RewriteRule ^categorydetail$ ./index.php?page=categorydetail
+RewriteRule ^categorydetail&([0-9]+)$ ./index.php?page=categorydetail&id=$1
+RewriteRule ^subcategorydetail&([0-9]+)$ ./index.php?page=subcategorydetail&id=$1
