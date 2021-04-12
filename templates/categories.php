@@ -12,9 +12,11 @@ require_once("header.php");
 
         <?php
                 foreach ($categories as $category) {
+
+                    $id=$category["id"];
                 ?>
-            <a><div class="cardCategory">
-                <?= $category["picture"] ?>
+            <a href="./categorydetail&<?= $id ?>"><div class="cardCategory">
+               <img src="assets/img/Logo_categories/<?= $category["picture"] ?>" alt=""> 
                 <h2><?= $category["name"] ?></h2>
             </div></a>
 

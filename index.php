@@ -24,6 +24,11 @@ $data = array(
 		"model" => "CategoriesModel",
 		"view" => "CategoriesView",
 		"controller" => "CategoriesController"
+	),
+	"categorydetail" => array(
+		"model" => "CategoryDetailModel",
+		"view" => "CategoryDetailView",
+		"controller" => "CategoryDetailController"
 	)
 );
 
