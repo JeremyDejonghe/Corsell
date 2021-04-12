@@ -8,7 +8,8 @@ class ProductView
 
     public function render()
     {
-        $products = $this->controller->getProducts();
+        $product = $this->controller->getProduct();
+        $categories = $this->controller->getCategoryDetail();
         require($this->template);
     }
 }

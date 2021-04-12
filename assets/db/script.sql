@@ -66,7 +66,7 @@ CREATE TABLE products (
     name VARCHAR(50) NOT NULL,
     picture VARCHAR(255) NOT NULL,
     description TEXT NOT NULL,
-    price DECIMAL(7,2) NOT NULL,
+    price INT NOT NULL,
     promo INT,
     quantity INT,
     sell_number INT,
