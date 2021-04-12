@@ -24,14 +24,29 @@ $data = array(
 		"model" => "ProductModel",
 		"view" => "ProductView",
 		"controller" => "ProductController"
+	),
+	"subcategorydetail"=>array(
+		"model"=>"SubcategorydetailModel",
+		"view"=>"SubcategorydetailView",
+		"controller"=>"SubcategorydetailController"
+	),
+	"categories" => array(
+		"model" => "CategoriesModel",
+		"view" => "CategoriesView",
+		"controller" => "CategoriesController"
+	),
+	"categorydetail" => array(
+		"model" => "CategoryDetailModel",
+		"view" => "CategoryDetailView",
+		"controller" => "CategoryDetailController"
 	)
 );
 
 $find = false;
-foreach($data as $key => $components){
+foreach ($data as $key => $components) {
 	if ($page == $key) {
 		$find = true;
-		
+
 		$model = $components["model"];
 		$view = $components["view"];
 		$controller = $components["controller"];
