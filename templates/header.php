@@ -54,25 +54,26 @@
             <a href="">
                 <p>Meilleures Ventes</p>
             </a>
-            <a href="">
-                <p>Cor-sell Basics</p>
+            <a href="./categories">
+                <p>Nos catégories</p>
             </a>
+            
             <a href="">
                 <p>Dernières Nouveautées</p>
             </a>
             <a href="">
                 <p>Les essentiels du pirate</p>
             </a>
-            <a href="">
+            <a href="./categorydetail&4">
                 <p>Navires</p>
             </a>
-            <a href="">
+            <a href="./categorydetail&6">
                 <p>Victuailles</p>
             </a>
-            <a href="">
+            <a href="./categorydetail&2">
                 <p>Armes</p>
             </a>
-            <a href="">
+            <a href="./categorydetail&3">
                 <p>Matières premières</p>
             </a>
             <a href="">

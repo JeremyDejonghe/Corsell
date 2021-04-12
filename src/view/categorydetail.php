@@ -12,9 +12,11 @@ class CategoryDetailView
     public function render()
     {
         $categories = $this->controller->getCategoryDetail();
-        $subcategories = $this->controller->getCategorySubcategories();
+        // $subcategories = $this->controller->getCategorySubcategories();
         $categoriesname= $this->controller->getCategoryName();
-        $subcategoriesname= $this->controller->getSubcategoryName();
+        $subcategories= $this->controller->getSubcategories();
+        $products = $this->controller->getProducts($subcategories);
+     
         require($this->template);
     }
 }
