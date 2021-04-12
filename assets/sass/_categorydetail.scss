@@ -4,7 +4,7 @@
     .vertical-banner {
         padding: 3rem 0;
         background-color: $primary-color;
-        width: 25rem;
+        flex-basis: 15%;
         .banner-title {
             display: flex;
             align-items: center;
