@@ -12,6 +12,7 @@ class SubcategorydetailView
     {
         $products = $this->controller->getProductSubCategory();
         $names = $this->controller->getNameSubCategory();
+        $categories = $this->controller->getCategoryDetail(); 
         require($this->template);
     }
 
