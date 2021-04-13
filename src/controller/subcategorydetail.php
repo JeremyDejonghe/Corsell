@@ -11,7 +11,7 @@ class SubcategorydetailController
     }
     public function getProductSubCategory()
     {
-        $query = $this->model->db->prepare("select p.name,p.price,p.picture,p.promo
+        $query = $this->model->db->prepare("select p.id, p.name,p.price,p.picture,p.promo
         from products as p
         inner join subcategory as s 
         on p.id_subcategory = s.id 
