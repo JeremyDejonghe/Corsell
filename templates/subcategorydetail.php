@@ -7,9 +7,7 @@ require_once("aside.php");
 ?>
 
     <div class="elements-container">
-        <div class="element-title">
 
-        </div>
         <div class="horizontal-banner">
 
             <div class="container-subcategorydetail">
@@ -26,6 +24,7 @@ require_once("aside.php");
                 <div class="container-img-subcategorydetail">
                     <?php
                     foreach ($products as $product) {
+                        
                     ?>
                         <a href="./product&<?= $product["id"] ?>">
                             <div class="div-subcategorydetail">

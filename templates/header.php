@@ -76,7 +76,7 @@
             <a href="./categorydetail&3">
                 <p>Matières premières</p>
             </a>
-            <a href="">
+            <a href="./brands">
                 <p>Nos Marques</p>
             </a>
 
