@@ -7,4 +7,6 @@
 *.sass.map
 *.scss.map
 
+assets/css
+
 # End of https://www.toptal.com/developers/gitignore/api/sass
