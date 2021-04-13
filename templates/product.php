@@ -1,36 +1,9 @@
 <?php
 require_once("header.php");
 ?>
-<main class="categories-container">
-
-    <div class="vertical-banner">
-        <div class="banner-title">
-            <p>Toutes les catégories</p>
-        </div>
-        <?php
-        foreach ($categories as $category) {
-            $subnames = explode(",", $category["subname"]);
-            $subids = explode(",", $category["subid"]);
-            $id = $category["id"];
-
-        ?>
-
-            <div class="category-title">
-                <img src="./assets/img/Logo_categories/<?= $category["picture"] ?>"></img>
-                <a href="./categorydetail&<?= $id ?>">
-                    <ul><?= $category["name"] ?></ul>
-                </a>
-            </div>
-            <div class="subcategory-title">
-                <!-- Boucle qui récupère à la fois le nom et l'id de la subcategory. Id récupéré par la variable $index -->
-                <?php foreach ($subnames as $index => $subname) { ?>
-                    <a href="<?= $subids[$index] ?>">
-                        <li><?= $subname ?></li>
-                    </a>
-                <?php } ?>
-            </div>
-        <?php } ?>
-    </div>
+<?php 
+require_once("aside.php");
+?>
 
     <div class="elements-container">
         <div class="element-information">
@@ -41,13 +14,13 @@ require_once("header.php");
                 <h1><?= $product["productName"] ?></h1>
                 <p><?= $product["description"] ?></p>
                 <div class="product-brand">
-                    <a href="./brands&<?= $product["idBrand"] ?>">
+                    <a href="./brand&<?= $product["idBrand"] ?>">
                         <img src="assets/img/Marques/<?= $product["pictureBrand"] ?>" alt="" class="brand-icon">
                     </a>
                     <a href="./categorydetail&<?= $product["idCategory"] ?>"><img src="assets/img/Logo_categories/<?= $product["pictureCategory"] ?>" alt=""></a>
                 </div>
                 <span><?= $product["quantity"] > 0 ? "En Stock" : "Actuellement indisponible" ?></span>
-                <a href="./subcategory&<?= $product["idSubcategory"] ?>" class="subProduct">D'autres produits similaires...</a>
+                <a href="./subcategorydetail&<?= $product["idSubcategory"] ?>" class="subProduct">D'autres produits similaires...</a>
             </div>
         </div>
         <div class="product-footer">

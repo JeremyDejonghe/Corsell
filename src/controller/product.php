@@ -1,7 +1,8 @@
 <?php
-class ProductController
+require("common.php");
+class ProductController extends CommonController
 {
-    private $model;
+    protected $model;
 
     public function __construct(ProductModel $model)
     {
@@ -24,17 +25,6 @@ class ProductController
         $query->bindParam(":id", $this->model->id, PDO::PARAM_INT);
         $query->execute();
         $res = $query->fetch();
-        return $res;
-    }
-
-    public function getCategoryDetail()
-    {
-        $query = $this->model->db->query("SELECT c.id , c.name , c.picture, group_concat(s.name) as subname , group_concat(s.id) as subid 
-        FROM category as c 
-        INNER JOIN subcategory as s 
-        ON c.id= s.id_category 
-        GROUP BY c.name");
-        $res=$query->fetchAll();
         return $res;
     }
 }

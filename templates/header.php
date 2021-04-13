@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="logo">
-            <a href="/corsell"><img src="assets/img/Cor-Sell_Logo.png" alt=""></a>
+            <a href="./"><img src="assets/img/Cor-Sell_Logo.png" alt=""></a>
         </div>
         <div class="nav1">
 

@@ -1,21 +1,15 @@
 <?php
-
-class CategoryDetailController
+require("common.php");
+class CategoryDetailController extends CommonController
 {
-    private $model;
+    protected $model;
 
     public function __construct(CategoryDetailModel $model)
     {
         $this->model = $model;
     }
 
-    // Recupération des catégories en bdd 
-    public function getCategoryDetail()
-    {
-        $query = $this->model->db->query("select c.id , c.name , c.picture, group_concat(s.name) as subname , group_concat(s.id) as subid from category as c inner join subcategory as s on c.id= s.id_category group by c.name");
-        $res = $query->fetchAll();
-        return $res;
-    }
+    // // Recupération des catégories en bdd 
     public function getSubcategories()
     {
         $query = $this->model->db->prepare("select s.name, s.id  from subcategory as s 

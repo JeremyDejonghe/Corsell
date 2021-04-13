@@ -85,8 +85,6 @@ CREATE TABLE products_command (
     FOREIGN KEY (id_products) REFERENCES products(id)
 );
 
---------------------------------------------------------------------
-
 INSERT INTO brands (name,picture)
 VALUES
 ('Anchor','Anchor.png'),
@@ -95,9 +93,9 @@ VALUES
 
 INSERT INTO category (name,picture)
 VALUES
-('Animaux de compagnie','Animaux.svg'),
+('Familiers','Animaux.svg'),
 ('Armes','Armes.svg'),
-('Matières premières','Rawmaterial.svg'),
+('Ressources','Rawmaterial.svg'),
 ('Navires','Ship.svg'),
 ('Vêtements','Vetements.svg'),
 ('Victuailles','Victuaille.svg');
@@ -150,7 +148,7 @@ VALUES
 ("Balle","Bullet.jpg","Une balle est un projectile d'arme à feu d'un calibre inférieur à 20 mm, de type pistolet, carabine, fusil.",150,0,200,1253,1,2,5),
 ("Flèches","Arrow.jpg","Une flèche est une arme de tir, constituée d'un long tube ou fût muni d'une pointe à une extrémité, d'un empennage et une encoche à l'autre, et utilisée principalement pour la chasse et pour la guerre.",120,0,230,456,2,2,5),
 ("Carreaux d arbalète","Crossbow-arrow.jpg","Le carreau d'arbalète, ou simplement le carreau ou encore le trait d’arbalètea, est le projectile utilisé avec une arbalète, dont le fer pyramidal à quatre pans a une base carrée.",50,34,120,643,2,2,5),
-("Radeau en bambou","Raft_Bamboojpg","Radeau de fortune en bambou.",12,0,1036,2780,2,4,9),
+("Radeau en bambou","Raft_Bamboojpg.jpg","Radeau de fortune en bambou.",12,0,1036,2780,2,4,9),
 ("Radeau à voile","Raft_Sail.jpg","Un radeau, désigne à l'origine un assemblage de poutres1. C'est un type d'embarcation basse sur l'eau, souvent sommaire, permettant de naviguer ou d'atteindre la terre ferme, parfois dans des conditions particulières.",80,0,23,223,2,4,9),
 ("Sloop Renard","Fox_Sloop.jpg","Le Renard était un voilier du XIX e siècle, de type cotre à hunier. Il fut le dernier navire armé pour la course par le corsaire malouin Robert Surcouf.",1645,0,5,6,3,4,10),
 ("Sloop des ombres","Shadow_Sloop.jpg","Le Sloop des ombres était un voilier du XIX e siècle, de type cotre à hunier. Il fut l'un des dernier navire armé.",1812,0,4,3,3,4,10),
