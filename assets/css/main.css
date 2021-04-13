@@ -787,8 +787,33 @@ header .nav2 a {
 .categories-container .elements-container .element-title p {
   margin: 0.5rem 0;
 }
-.categories-container .elements-container .horizontal-banner h2 {
+.categories-container .elements-container .horizontal-banner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.categories-container .elements-container .horizontal-banner .sub-title {
+  width: 100%;
+}
+.categories-container .elements-container .horizontal-banner .sub-title h2 {
   color: black;
+  width: 100%;
+}
+.categories-container .elements-container .horizontal-banner .elementcard {
+  margin-right: 2rem;
+}
+.categories-container .elements-container .horizontal-banner .elementcard img {
+  width: 20rem;
+  border: 1px solid #063D40;
+}
+.categories-container .elements-container .horizontal-banner .elementcard p {
+  text-align: center;
+  font-weight: 600;
+}
+.categories-container .elements-container .horizontal-banner .other-products {
+  font-size: 2.4rem;
+  align-self: flex-end;
+  margin-bottom: 5.2rem;
+  color: #063D40;
 }
 
 .categories-container {
@@ -851,33 +876,8 @@ header .nav2 a {
 .categories-container .elements-container .element-title p {
   margin: 0.5rem 0;
 }
-.categories-container .elements-container .horizontal-banner {
-  display: flex;
-  flex-wrap: wrap;
-}
-.categories-container .elements-container .horizontal-banner .sub-title {
-  width: 100%;
-}
-.categories-container .elements-container .horizontal-banner .sub-title h2 {
+.categories-container .elements-container .horizontal-banner h2 {
   color: black;
-  width: 100%;
-}
-.categories-container .elements-container .horizontal-banner .elementcard {
-  margin-right: 2rem;
-}
-.categories-container .elements-container .horizontal-banner .elementcard img {
-  width: 20rem;
-  border: 1px solid #063D40;
-}
-.categories-container .elements-container .horizontal-banner .elementcard p {
-  text-align: center;
-  font-weight: 600;
-}
-.categories-container .elements-container .horizontal-banner .other-products {
-  font-size: 2.4rem;
-  align-self: flex-end;
-  margin-bottom: 5.2rem;
-  color: #063D40;
 }
 
 .container-subcategorydetail .container-img-subcategorydetail {
