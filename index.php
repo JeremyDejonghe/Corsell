@@ -39,7 +39,13 @@ $data = array(
 		"model" => "CategoryDetailModel",
 		"view" => "CategoryDetailView",
 		"controller" => "CategoryDetailController"
+	),
+	"brands" => array(
+		"model" => "BrandsModel",
+		"view" => "BrandsView",
+		"controller" => "BrandsController"
 	)
+
 );
 
 $find = false;
