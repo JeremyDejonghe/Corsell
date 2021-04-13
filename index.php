@@ -44,8 +44,12 @@ $data = array(
 		"model" => "BrandsModel",
 		"view" => "BrandsView",
 		"controller" => "BrandsController"
+	),
+	"bestsells" => array(
+		"model" => "BestsellsModel",
+		"view" => "BestsellsView",
+		"controller" => "BestsellsController"
 	)
-
 );
 
 $find = false;
