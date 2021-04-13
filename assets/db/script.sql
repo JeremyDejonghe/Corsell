@@ -85,7 +85,7 @@ CREATE TABLE products_command (
     FOREIGN KEY (id_products) REFERENCES products(id)
 );
 
---------------------------------------------------------------------
+
 
 INSERT INTO brands (name,picture)
 VALUES

@@ -27,7 +27,7 @@ require_once("header.php");
             <div class="subcategory-title">
                 <!-- Boucle qui récupère à la fois le nom et l'id de la subcategory. Id récupéré par la variable $index -->
                 <?php foreach ($subnames as $index => $subname) { ?>
-                    <a href="<?= $subids[$index] ?>">
+                    <a href="./subcategorydetail&<?= $subids[$index] ?>">
                         <li><?= $subname ?></li>
                     </a>
                 <?php } ?>
@@ -36,9 +36,7 @@ require_once("header.php");
     </div>
 
     <div class="elements-container">
-        <div class="element-title">
 
-        </div>
         <div class="horizontal-banner">
 
             <div class="container-subcategorydetail">
@@ -55,8 +53,9 @@ require_once("header.php");
                 <div class="container-img-subcategorydetail">
                     <?php
                     foreach ($products as $product) {
+                        
                     ?>
-                        <a href="">
+                        <a href="./product&<?= $product["id"] ?>">
                             <div class="div-subcategorydetail">
                                 <img src="assets/img/<?= $product["picture"] ?>" alt="Image du produit" class="img-subcategorydetail">
                                 <h2><?= $product["name"] ?></h2>
