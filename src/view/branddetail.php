@@ -1,17 +1,17 @@
 <?php
 
-class BrandsView
+class BrandDetailView
 {
 
-    public function __construct(BrandsController $controller)
+    public function __construct(BrandDetailController $controller)
     {
         $this->controller=$controller;
-        $this->template=DIR_TEMPLATE."brands.php";
+        $this->template=DIR_TEMPLATE."branddetail.php";
     }
 
     public function render()
     {
-        $brands=$this->controller->getBrands();
+        $brand=$this->controller->getBrandDetail();
         $categories = $this->controller->getCategoryDetail();
         require($this->template);
     }

@@ -14,7 +14,7 @@ require_once("aside.php");
                 <h1><?= $product["productName"] ?></h1>
                 <p><?= $product["description"] ?></p>
                 <div class="product-brand">
-                    <a href="./brand&<?= $product["idBrand"] ?>">
+                    <a href="./brands&<?= $product["idBrand"] ?>">
                         <img src="assets/img/Marques/<?= $product["pictureBrand"] ?>" alt="" class="brand-icon">
                     </a>
                     <a href="./categorydetail&<?= $product["idCategory"] ?>"><img src="assets/img/Logo_categories/<?= $product["pictureCategory"] ?>" alt=""></a>

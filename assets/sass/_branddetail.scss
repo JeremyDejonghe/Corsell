@@ -1,0 +1,31 @@
+.brand-container{
+    padding: 5rem 8rem ;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 85%;
+    .brand-title{
+        display: flex;
+        justify-content: center;
+        h1{
+            font-family: 'Spectral';
+        }
+    }
+    .brand-detail{
+        
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        .brand-img{
+           
+            width: 25rem;
+            img{
+                width: 100%;
+                border: solid 0.2rem $secondary-color;
+            }
+        }
+        .brand-description{
+            padding: 5rem 25rem;
+        }
+    }
+}

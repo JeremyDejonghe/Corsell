@@ -1,9 +1,9 @@
 <?php
+require("common.php");
 
-
-class BrandsController
+class BrandsController extends CommonController
 {
-    private $model;
+    protected $model;
 
     public function __construct(BrandsModel $model)
     {
