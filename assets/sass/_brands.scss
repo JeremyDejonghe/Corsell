@@ -2,12 +2,14 @@
     display: flex;
     flex-direction: column;
     padding: 10rem;
-    background-color: $primary-color;
+    background-color: #f5f5f5;
     .titleBrands{
         display: flex;
         justify-content: center;
         margin-bottom: 8rem;
-
+h1{
+    font-family: 'Spectral';
+}
     }
     .cardsBrands{
         display: flex;
@@ -17,7 +19,7 @@
            border: 0.2rem solid $secondary-color;
             height: 20rem;
             img{
-                background-color: #f5f5f5;
+                background-color: #E2E2E2;
                 height: 100%;
             }
         }

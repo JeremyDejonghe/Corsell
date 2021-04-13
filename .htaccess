@@ -7,8 +7,5 @@ RewriteRule ^categorydetail$ ./index.php?page=categorydetail
 RewriteRule ^categorydetail&([0-9]+)$ ./index.php?page=categorydetail&id=$1
 RewriteRule ^subcategorydetail&([0-9]+)$ ./index.php?page=subcategorydetail&id=$1
 RewriteRule ^product&([0-9]+)$ ./index.php?page=product&id=$1
-<<<<<<< HEAD
-
-=======
 RewriteRule ^brands$ ./index.php?page=brands
->>>>>>> feature/brands
+RewriteRule ^brands&([0-9]+)$ ./index.php?page=branddetail&id=$1

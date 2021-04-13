@@ -932,12 +932,15 @@ header .nav2 a {
   display: flex;
   flex-direction: column;
   padding: 10rem;
-  background-color: rgba(181, 127, 65, 0.69);
+  background-color: #f5f5f5;
 }
 .mainBrands .titleBrands {
   display: flex;
   justify-content: center;
   margin-bottom: 8rem;
+}
+.mainBrands .titleBrands h1 {
+  font-family: "Spectral";
 }
 .mainBrands .cardsBrands {
   display: flex;
@@ -949,8 +952,33 @@ header .nav2 a {
   height: 20rem;
 }
 .mainBrands .cardsBrands .cardBrand img {
-  background-color: #f5f5f5;
+  background-color: #E2E2E2;
   height: 100%;
+}
+
+.brand-container {
+  padding: 5rem;
+}
+.brand-container .brand-title {
+  display: flex;
+  justify-content: center;
+}
+.brand-container .brand-title h1 {
+  font-family: "Spectral";
+}
+.brand-container .brand-detail {
+  margin: 0 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.brand-container .brand-detail .brand-img {
+  width: 25rem;
+}
+.brand-container .brand-detail .brand-img img {
+  width: 100%;
+  border: solid 0.2rem #063D40;
 }
 
 /*# sourceMappingURL=main.css.map */
