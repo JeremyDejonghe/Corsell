@@ -20,8 +20,8 @@ require_once("aside.php");
             </div>
 
             <?php
-    var_dump($products[$category["categoryid"]]);
-            foreach ($products[$category["categoryid"]] as $product) {
+
+            foreach ($products[$category["id"]] as $product) {
             ?>
 
                 <a href="./product&<?= $product["productid"] ?>">
@@ -37,8 +37,6 @@ require_once("aside.php");
         <?php } ?>
     </div>
 </div>
-
-
 </main>
 <?php
 require_once("footer.php");

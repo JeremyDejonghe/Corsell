@@ -12,8 +12,8 @@ class BestsellsView
     public function render()
     {
         $categories = $this->controller->getCategoryDetail();
-        $bestSellC = $this->controller->getProductsFromCategory();
-        $products = $this->controller->getBestsellsProducts($bestSellC);
+        $idCategories = $this->controller->getCategories();
+        $products = $this->controller->getBestsellsProducts($idCategories);
         require($this->template);
     }
 

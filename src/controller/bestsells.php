@@ -10,7 +10,7 @@ class BestsellsController extends CommonController
         $this->model=$model;
         
     }
-    // Recupération des produits les plus vendus en bdd
+
     public function getCategories()
     {
         $res = $this->model->db->query("SELECT id FROM category");
@@ -32,12 +32,12 @@ class BestsellsController extends CommonController
         return $res;
     }
 
-    public function getBestsellsProducts($categories)
+    public function getBestsellsProducts($idCategories)
     {
         $data = array();
 
-        foreach ($categories as $category) {
-            $data[$category["id"]] = $this->getCategories($category["id"]);
+        foreach ($idCategories as $idcategory) {
+            $data[$idcategory["id"]] = $this->getProductsFromCategory($idcategory["id"]);
         }
         return $data;
     }
