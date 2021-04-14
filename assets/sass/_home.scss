@@ -1,0 +1,125 @@
+body{
+    background-color: $primary-color;
+}
+.home-container {
+ 
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+margin-top: 5rem;
+    .header-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80rem;
+
+        .header-img {
+            display: flex;
+            justify-content: center;
+
+            img {
+                border: 0.1rem solid $secondary-color;
+
+                max-width: 100%;
+            }
+        }
+        .cards-ban {
+            transform: translateY(-20rem);
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+
+            justify-content: space-around;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                margin: 2rem 0;
+                padding: 1rem;
+                width: 30rem;
+                height: 38rem;
+                border: solid 0.2rem $secondary-color;
+                background-color: white;
+
+                h2 {
+                    margin: 1rem 0;
+                }
+                .card-img {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 33, 3rem;
+
+                    img {
+                        border: 0.1rem solid $secondary-color;
+                        margin-top: 1rem;
+                        width: 13rem;
+                    }
+                }
+            }
+        }
+    }
+    .banner {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 12rem;
+        max-width: 100%;
+        img {
+            width: 100%;
+            border: solid 0.1rem $secondary-color;
+        }
+    }
+    .home-category {
+        display: flex;
+        justify-content: center;
+        padding: 4rem 0;
+        width: 100%;
+        .cards-ban {
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            width: 70%;
+            justify-content: space-around;
+            .card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                color: #2d2d2d;
+                margin: 2rem 0;
+                padding: 1rem;
+                width: 30rem;
+                height: 33rem;
+                border: solid 0.2rem $secondary-color;
+                background-color: white;
+                img {
+                    width: 20rem;
+                }
+            }
+        }
+    }
+    .card-line {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: white;
+        padding: 4rem;
+        margin: 10rem 0;
+        width: 80%;
+        h2 {
+            width: 100%;
+            margin-top: 0;
+        }
+        a {
+            img {
+                width: 20rem;
+                border: solid 0.1rem $secondary-color;
+            }
+        }
+    }
+}
