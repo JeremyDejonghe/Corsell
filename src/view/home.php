@@ -8,6 +8,10 @@ class HomeView
 
     public function render()
     {
+        $mostSells = $this->controller->getMostSell();
+        $lastProducts = $this->controller->getLastProducts();
+        $mostSellWeapons = $this->controller->getMostSellWeapons();
+        $categories = $this->controller->getCategory();
         require($this->template);
     }
 }
