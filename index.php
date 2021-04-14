@@ -54,6 +54,11 @@ $data = array(
 		"model" => "BestsellsModel",
 		"view" => "BestsellsView",
 		"controller" => "BestsellsController"
+	),
+	"lastnew" => array(
+		"model" => "LastnewModel",
+		"view" => "LastnewView",
+		"controller" => "LastnewController"
 	)
 );
 

@@ -51,14 +51,14 @@
                 </svg></a>
         </div>
         <div class="nav2">
-            <a href="">
+            <a href="./bestsells">
                 <p>Meilleures Ventes</p>
             </a>
             <a href="./categories">
                 <p>Nos catégories</p>
             </a>
             
-            <a href="">
+            <a href="./lastnew">
                 <p>Dernières Nouveautées</p>
             </a>
             <a href="">
