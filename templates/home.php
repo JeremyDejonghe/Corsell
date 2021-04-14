@@ -2,52 +2,62 @@
 $home = true;
 require_once("header.php");
 ?>
-<main>
+<main class="home-container">
     <section class="header-wrapper">
-        <figure>
+        <div class="header-img">
             <img src="assets/img/background-header.png" alt="">
-        </figure>
-
-        <div class="card">
-            <h2>Les plus vendus</h2>
-            <?php foreach ($mostSells as $mostSell) { ?>
-                <img src="assets/img/products/<?= $mostSell["picture"] ?>" alt="">
-            <?php } ?>
         </div>
-        <div class="card">
-            <h2>Les essentiels du Pirate</h2>
-            <img src="assets/img/essentials.png" alt="">
-        </div>
-        <div class="card">
-            <h2>Dernières nouveautées</h2>
-            <?php foreach ($lastProducts as $lastProduct) { ?>
-                <img src="assets/img/products/<?= $lastProduct["picture"] ?>" alt="">
-            <?php } ?>
+        <div class="cards-ban">
+            <div class="card">
+                <h2>Les plus vendus</h2>
+                <div class="card-img">
+                    <?php foreach ($mostSells as $mostSell) { ?>
+                        <a href="./product&<?= $mostSell["id"] ?>"><img src="assets/img/<?= $mostSell["picture"] ?>" alt=""></a>
+                    <?php } ?>
+                </div>
+            </div>
+            <a href="./essentials">
+                <div class="card">
+                    <h2>Les essentiels du Pirate</h2>
+                    <img src="assets/img/essentials.png" alt="">
+                </div>
+            </a>
+            <div class="card">
+                <h2>Dernières nouveautées</h2>
+                <div class="card-img">
+                    <?php foreach ($lastProducts as $lastProduct) { ?>
+                        <a href="./product&<?= $lastProduct["id"] ?>"><img src="assets/img/<?= $lastProduct["picture"] ?>" alt=""></a>
+                    <?php } ?>
+                </div>
+            </div>
         </div>
     </section>
 
     <div class="banner">
-        <img src="assets/img/banner_commercial.png" alt="">
+        <a href="./commercial1"><img src="assets/img/banner_commercial.png" alt=""></a>
     </div>
 
-    <section class="category">
-        <?php foreach ($categories as $category) { ?>
-            <div class="card">
-                <h2><?= $category["name"] ?></h2>
-                <img src="assets/img/products/<?= $category["picture"] ?>" alt="">
-            </div>
-        <?php } ?>
+    <section class="home-category">
+        <div class="cards-ban">
+            <?php foreach ($categories as $category) { ?>
+                <a href="./categorydetail&<?= $category["id"] ?>">
+                    <div class="card">
+                        <h2><?= $category["name"] ?></h2>
+                        <img src="assets/img/Logo_categories/<?= $category["picture"] ?>" alt="">
 
-        <div class="card-line">
-            <h2>Meilleures ventes dans armes</h2>
-            <?php foreach ($mostSellWeapons as $mostSellWeapon) { ?>
-                <img src="assets/img/products/<?= $mostSellWeapon["picture"] ?>" alt="">
+                    </div>
+                </a>
             <?php } ?>
         </div>
     </section>
-
+    <div class="card-line">
+        <h2>Meilleures ventes dans armes</h2>
+        <?php foreach ($mostSellWeapons as $mostSellWeapon) { ?>
+            <a href="./product&<?= $mostSellWeapon["id"] ?>"><img src="assets/img/<?= $mostSellWeapon["picture"] ?>" alt=""></a>
+        <?php } ?>
+    </div>
     <div class="banner">
-        <img src="assets/img/banner_commercial.png" alt="">
+        <a href="./commercial2"> <img src="assets/img/banner_commercial2.png" alt=""></a>
     </div>
 
 </main>

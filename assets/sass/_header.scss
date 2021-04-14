@@ -17,12 +17,18 @@ header {
     }
     .nav1 {
         padding: 2rem  13rem;
+        a:hover{
+            text-decoration: underline;
+           
+        }
         p{
             margin: 0;
         }
+            
+        
         display: flex;
         flex-wrap: wrap;
-        background-color: $primary_color;
+      
         color: $fonts_primary_color;
         justify-content: space-around;
         align-items: center;
@@ -59,6 +65,7 @@ header {
                     align-self: flex-end;
                     margin: 0 0 0.5rem 0;
                 }
+                
             }
         }
         .note{
@@ -76,6 +83,9 @@ header {
         flex-wrap: wrap;
         a{
             margin-right: 5rem;
+            p:hover{
+text-decoration: underline;
+            }
         }
     }
 }
