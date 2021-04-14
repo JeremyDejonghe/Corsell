@@ -45,17 +45,15 @@ $data = array(
 		"view" => "BrandsView",
 		"controller" => "BrandsController"
 	),
-<<<<<<< HEAD
 	"branddetail" => array(
 		"model" => "BrandDetailModel",
 		"view" => "BrandDetailView",
 		"controller" => "BrandDetailController"
-=======
+	),
 	"bestsells" => array(
 		"model" => "BestsellsModel",
 		"view" => "BestsellsView",
 		"controller" => "BestsellsController"
->>>>>>> feature/bestsells
 	)
 );
 
