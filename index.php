@@ -69,6 +69,12 @@ $data = array(
 		"model" => "ConnexionModel",
 		"view" => "ConnexionView",
 		"controller" => "ConnexionController"
+	),
+	
+	"registration" => array(
+		"model" => "RegistrationModel",
+		"view" => "RegistrationView",
+		"controller" => "RegistrationController"
 	)
 
 );
