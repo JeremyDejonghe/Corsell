@@ -15,3 +15,4 @@ RewriteRule ^bestsells$ ./index.php?page=bestsells
 RewriteRule ^lastnew$ ./index.php?page=lastnew
 RewriteRule ^brands$ ./index.php?page=brands
 RewriteRule ^brands&([0-9]+)$ ./index.php?page=branddetail&id=$1
+RewriteRule ^essentials$ ./index.php?page=essentials
