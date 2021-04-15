@@ -24,7 +24,7 @@ class HomeController
     }
 
     public function getMostSellWeapons() {
-        $res = $this->model->db->query("SELECT id, picture FROM products WHERE id_category = 2  ORDER BY sell_number DESC LIMIT 0,5");
+        $res = $this->model->db->query("SELECT id, picture FROM products WHERE id_category = 2  ORDER BY sell_number DESC LIMIT 0,6");
 
         return $res;
     }

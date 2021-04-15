@@ -598,8 +598,9 @@ body {
   flex-wrap: wrap;
   background-color: white;
   padding: 4rem;
-  margin: 10rem 0;
+  margin: 10rem 0 16rem 0;
   width: 80%;
+  border: solid 0.2rem #063D40;
 }
 .home-container .card-line h2 {
   width: 100%;
