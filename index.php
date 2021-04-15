@@ -59,7 +59,13 @@ $data = array(
 		"model" => "LastnewModel",
 		"view" => "LastnewView",
 		"controller" => "LastnewController"
+	),
+	"connexion" => array(
+		"model" => "ConnexionModel",
+		"view" => "ConnexionView",
+		"controller" => "ConnexionController"
 	)
+
 );
 
 $find = false;
