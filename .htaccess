@@ -11,6 +11,7 @@ RewriteRule ^coco$ ./coco.php
 RewriteRule ^snap-ship$ ./snap-ship.php
 RewriteRule ^faceborgne$ ./faceborgne.php
 RewriteRule ^brands$ ./index.php?page=brands
+RewriteRule ^registration$ ./index.php?page=registration
 
 RewriteRule ^brands$ ./index.php?page=brands
 RewriteRule ^brands&([0-9]+)$ ./index.php?page=branddetail&id=$1

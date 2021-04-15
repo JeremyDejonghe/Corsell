@@ -49,6 +49,11 @@ $data = array(
 		"model" => "BrandDetailModel",
 		"view" => "BrandDetailView",
 		"controller" => "BrandDetailController"
+	),
+	"registration" => array(
+		"model" => "RegistrationModel",
+		"view" => "RegistrationView",
+		"controller" => "RegistrationController"
 	)
 
 );

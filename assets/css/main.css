@@ -394,7 +394,7 @@ template {
 }
 footer {
   background-color: #063D40;
-  color: #E8EAE6;
+  color: #F5F5F5;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -477,7 +477,7 @@ header .nav1 .note {
 }
 header .nav2 {
   background-color: #063D40;
-  color: #E8EAE6;
+  color: #F5F5F5;
   display: flex;
   justify-content: center;
   padding: 0 12rem;
@@ -825,7 +825,7 @@ header .nav2 a {
   top: -10px;
   left: -20px;
   background: #063D40;
-  color: #E8EAE6;
+  color: #F5F5F5;
   border: solid black 1px;
 }
 .container-subcategorydetail .container-img-subcategorydetail .div-subcategorydetail .price-promo-img-subcategorydetail {
@@ -835,7 +835,7 @@ header .nav2 a {
   top: -10px;
   left: -20px;
   background: #850000;
-  color: #E8EAE6;
+  color: #F5F5F5;
   border: solid black 1px;
   text-align: center;
 }
@@ -897,78 +897,100 @@ header .nav2 a {
 }
 .brand-container .brand-detail .brand-description {
   padding: 5rem 25rem;
-.div-p-title-registration {
-  position: absolute;
-  top: 8.5rem;
-  right: 25rem;
-  font-family: "Spectral", serif, Courier, monospace;
 }
 
-.container-form-registration {
-  background-color: #E8EAE6;
+.main-registration {
+  display: flex;
+  justify-content: center;
+}
+.main-registration .div-p-title-registration {
+  position: absolute;
+  top: 4.5rem;
+  right: 50rem;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Spectral", serif, Courier, monospace;
+  max-width: 32rem;
+}
+.main-registration .div-p-title-registration p {
+  margin: 0;
+}
+.main-registration .container-form-registration {
+  border: #063D40 solid 1px;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+  flex-basis: 50%;
   margin: 15rem;
   padding: 5rem;
   font-family: "Spectral", serif, Courier, monospace;
 }
-.container-form-registration .form-registration {
+.main-registration .container-form-registration .form-registration {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  text-align: center;
 }
-.container-form-registration .form-registration .divone-form-registration {
-  min-width: 45%;
+.main-registration .container-form-registration .form-registration .divone-form-registration {
   display: flex;
   flex-direction: column;
+  flex-basis: 45%;
 }
-.container-form-registration .form-registration .form-div-registration {
+.main-registration .container-form-registration .form-registration .form-div-registration {
   border-radius: 10px;
   margin: 1rem;
   padding-right: 2rem;
   display: flex;
   flex-basis: 100%;
   flex-direction: column;
-  justify-content: space-between;
 }
-.container-form-registration .form-registration .form-div-registration input,
-.container-form-registration .form-registration .form-div-registration textarea,
-.container-form-registration .form-registration .form-div-registration select {
+.main-registration .container-form-registration .form-registration .form-div-registration .label-form-div-registration {
+  margin-bottom: 1rem;
+}
+.main-registration .container-form-registration .form-registration .form-div-registration label {
+  font-weight: bold;
+}
+.main-registration .container-form-registration .form-registration .form-div-registration input,
+.main-registration .container-form-registration .form-registration .form-div-registration textarea,
+.main-registration .container-form-registration .form-registration .form-div-registration select {
   border-radius: 10px;
+  border: #063D40 solid 1px;
+  border-radius: 10px;
+  height: 3rem;
 }
-.container-form-registration .form-registration .button-form-div-registration {
+.main-registration .container-form-registration .form-registration .button-form-div-registration {
   align-self: center;
   display: flex;
 }
-.container-form-registration .form-registration .button-form-div-registration input {
+.main-registration .container-form-registration .form-registration .button-form-div-registration input {
   border-radius: 10px;
   margin: 1rem;
   padding: 2rem;
   flex-basis: 100%;
   flex-direction: column;
   background-color: #063D40;
-  color: #E8EAE6;
+  color: #F5F5F5;
 }
 
-.body-registration {
+.body-header-soft {
   position: relative;
-  background-color: rgba(181, 127, 65, 0.69);
 }
 
-.header-registration {
+.header-header-soft {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.header-registration a {
+.header-header-soft a {
   color: inherit;
   text-decoration: none;
 }
-.header-registration .logo-header-soft {
+.header-header-soft .logo-header-soft {
   width: 18rem;
 }
-.header-registration .logo-header-soft img {
+.header-header-soft .logo-header-soft img {
   width: 100%;
 }
-.header-registration .logo-header-soft .title-header-soft h1 {
+.header-header-soft .logo-header-soft .title-header-soft h1 {
   font-size: 4rem;
   margin: 0;
 }
