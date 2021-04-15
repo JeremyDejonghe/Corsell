@@ -64,7 +64,13 @@ $data = array(
 		"model" => "EssentialsModel",
 		"view" => "EssentialsView",
 		"controller" => "EssentialsController"
-	) 
+	), 
+	"connexion" => array(
+		"model" => "ConnexionModel",
+		"view" => "ConnexionView",
+		"controller" => "ConnexionController"
+	)
+
 );
 
 $find = false;
