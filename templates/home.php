@@ -23,7 +23,7 @@ require_once("header.php");
                 </div>
             </a>
             <div class="card">
-                <h2>Dernières nouveautées</h2>
+                <h2>Dernières nouveautés</h2>
                 <div class="card-img">
                     <?php foreach ($lastProducts as $lastProduct) { ?>
                         <a href="./product&<?= $lastProduct["id"] ?>"><img src="assets/img/<?= $lastProduct["picture"] ?>" alt=""></a>

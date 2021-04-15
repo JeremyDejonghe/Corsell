@@ -17,7 +17,7 @@ CREATE TABLE users (
     email VARCHAR(100) NOT NULL,
     password VARCHAR(255) NOT null,
     avatar VARCHAR(50),
-    prime BOOLEAN DEFAULT false,
+    prime BOOL DEFAULT false,
     id_users_category TINYINT NOT NULL,
     FOREIGN KEY (id_users_category) REFERENCES users_category(id)
 );
@@ -84,6 +84,12 @@ CREATE TABLE products_command (
     FOREIGN KEY (id_command) REFERENCES commands(id),
     FOREIGN KEY (id_products) REFERENCES products(id)
 );
+
+INSERT INTO users_category (name) 
+VALUES
+("Pirate"),
+("Marchand"),
+("Corsaire");
 
 INSERT INTO brands (name,picture)
 VALUES

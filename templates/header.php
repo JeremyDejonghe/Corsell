@@ -59,7 +59,7 @@
             </a>
             
             <a href="./lastnew">
-                <p>Dernières Nouveautées</p>
+                <p>Dernières Nouveautés</p>
             </a>
             <a href="">
                 <p>Les essentiels du pirate</p>

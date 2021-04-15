@@ -8,7 +8,7 @@ require_once("aside.php");
 
 <div class="elements-container">
     <div class="element-title">
-        <h1>Les dernières nouveautées</h1>
+        <h1>Les dernières nouveautés</h1>
         <p>Nos produits dernièrement ajoutés</p>
     </div>
     <div class="horizontal-banner">
