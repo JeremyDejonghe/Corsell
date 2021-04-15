@@ -786,6 +786,46 @@ body {
   color: #2d2d2d;
 }
 
+.social-construct div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.social-construct div img {
+  -webkit-animation: spin 10s linear infinite;
+  -moz-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.social-construct div h1 {
+  margin: 0;
+  font-family: "Spectral";
+  font-size: 9.6rem;
+  color: #2d2d2d;
+}
+.social-construct div p {
+  margin-top: 10rem;
+  font-size: 3.6rem;
+  color: #2d2d2d;
+}
+
 .mainCategories {
   display: flex;
   flex-direction: column;

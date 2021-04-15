@@ -45,16 +45,7 @@
                 </g>
             </svg>
         </a>
-        <!-- <div class="three">
-            <div class="row cf">
-                <div class="loader" id="loader-2">
-                    <p>Chargement</p>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div> -->
+        <p>Chargement...</p>
     </div>
 </body>
 
