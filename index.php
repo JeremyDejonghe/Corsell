@@ -84,6 +84,11 @@ $data = array(
 		"model" => "SecurityModel",
 		"view" => "SecurityView",
 		"controller" => "SecurityController"
+	),
+	"edit_user" => array(
+		"model" => "Edit_UserModel",
+		"view" => "Edit_UserView",
+		"controller" => "Edit_UserController"
 	)
 );
 
