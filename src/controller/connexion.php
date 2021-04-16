@@ -10,7 +10,7 @@ class ConnexionController
 
     public function getUser($email)
     {
-        $res = $this->model->db->prepare("SELECT id, pseudo, email, avatar , id_users_category FROM users WHERE email = :email");
+        $res = $this->model->db->prepare("SELECT id, pseudo,firstname, email, avatar , id_users_category, password FROM users WHERE email = :email");
         $res->bindValue(":email", $email, PDO::PARAM_STR);
         $res->execute();
         $res = $res->fetch();
@@ -21,9 +21,10 @@ class ConnexionController
     public function validateLogin(): bool
     {
         $result = $this->getUser($this->model->email);
+        
         if (!empty($result) && password_verify($this->model->password, $result["password"])) {
             $_SESSION["session_id"] = md5($result["email"]);
-            $_SESSION["user_name"] = $result["firstname"];
+            $_SESSION["user_name"] = $result["pseudo"];
             $_SESSION["user_ip"] = $_SERVER["REMOTE_ADDR"];
             $_SESSION["user_category"] =$result["id_users_category"];
 

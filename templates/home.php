@@ -1,6 +1,7 @@
 <?php
 $home = true;
 require_once("header.php");
+
 ?>
 <main class="home-container">
     <section class="header-wrapper">

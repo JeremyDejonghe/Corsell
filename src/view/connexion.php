@@ -25,7 +25,7 @@ class ConnexionView
                     header("Location: espaceCorsaire");
                 }
                 else{
-                    header("Location: home");
+                    header("Location: ./");
                 }
                
             } else {

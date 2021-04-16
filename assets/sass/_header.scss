@@ -68,6 +68,11 @@ header {
                 
             }
         }
+        .logout{
+            display: flex;
+            align-self: flex-end;
+            margin-bottom: 0.5rem;
+        }
         .note{
             position: absolute;
             right: 0.5rem;
