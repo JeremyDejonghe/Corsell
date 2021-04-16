@@ -35,7 +35,7 @@ require_once("header.php");
     </section>
 
     <div class="banner">
-        <a href="./commercial1"><img src="assets/img/banner_commercial.png" alt=""></a>
+        <a href="./categorydetail&5"><img src="assets/img/banner_commercial.png" alt=""></a>
     </div>
 
     <section class="home-category">
@@ -58,7 +58,7 @@ require_once("header.php");
         <?php } ?>
     </div>
     <div class="banner">
-        <a href="./commercial2"> <img src="assets/img/banner_commercial2.png" alt=""></a>
+        <a href="./jointhecrew"> <img src="assets/img/banner_commercial2.png" alt=""></a>
     </div>
 
 </main>

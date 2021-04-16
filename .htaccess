@@ -25,4 +25,5 @@ RewriteRule ^logout$ ./logout.php
 RewriteRule ^espacepirate$ ./index.php?page=espacepirate
 RewriteRule ^espacemarchand$ ./index.php?page=espacemarchand
 RewriteRule ^espacepirate$ ./index.php?page=espacecorsaire
-
+RewriteRule ^erre$ ./erre.php
+RewriteRule ^jointhecrew$ ./jointhecrew.php

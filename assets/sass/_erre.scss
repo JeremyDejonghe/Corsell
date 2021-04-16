@@ -1,0 +1,18 @@
+.main-erre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    .img-erre{
+        border:solid 1px $secondary_color ;
+        width: 100%;
+    }
+}
+
+.div-img-erre{
+    max-width: 100%;
+}
+.corsell-strong-erre{
+    font-weight: 600;
+    font-size: 2rem;
+}
