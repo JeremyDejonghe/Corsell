@@ -21,9 +21,10 @@
             <div class="title">
                 <h1>Cor-Sell</h1>
             </div>
-            <div class="search">
-                <input type="text" placeholder="Rechercher un produit">
-            </div>
+            <form action="./search" method="GET" class="search">
+                <label for="inputSearch"></label>
+                <input type="text" name="search" id="inputSearch" placeholder="Rechercher un produit">
+            </form>
             <div class="bonjour">
                 <a href="http://">
                     <p>Bonjour, <span>Identifiez-vous</span></p>

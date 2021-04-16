@@ -70,13 +70,16 @@ $data = array(
 		"view" => "ConnexionView",
 		"controller" => "ConnexionController"
 	),
-	
 	"registration" => array(
 		"model" => "RegistrationModel",
 		"view" => "RegistrationView",
 		"controller" => "RegistrationController"
+	),
+	"search" => array(
+		"model" => "SearchModel",
+		"view" => "SearchView",
+		"controller" => "SearchController"
 	)
-
 );
 
 $find = false;
