@@ -1,0 +1,89 @@
+.alert {
+color: tomato;
+font-weight: 600;
+}
+.connexion-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    padding-bottom: 10rem;
+    .element-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: #f5f5f5;
+        border-radius: 1rem;
+        border: solid 0.2rem $secondary-color;
+        padding: 2rem;
+        height: 40rem;
+        width: 45rem;
+        margin-bottom: 2rem;
+        h2 {
+            font-family: "Spectral", sans-serif;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                label {
+                    font-weight: 600;
+                    font-size: 2rem;
+                }
+                input {
+                    margin: 1rem;
+                    width: 35rem;
+                    height: 3rem;
+                    border-radius: 1rem;
+                    border: solid 0.1rem $secondary-color;
+                }
+                input:select {
+                    border: #2d2d2d;
+                    border-radius: 1rem;
+                }
+            }
+            p {
+                text-align: center;
+                font-style: italic;
+                span {
+                    font-weight: 600;
+                }
+            }
+            .p-reset:hover {
+                text-decoration: underline;
+            }
+            .btn-valid {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #f5f5f5;
+                background-color: $secondary-color;
+                font-size: 2rem;
+                width: 30rem;
+                height: 4rem;
+                border-radius: 1rem;
+                border: solid 0.2rem $secondary-color;
+            }
+        }
+    }
+    .registration-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $secondary-color;
+        background-color: #f5f5f5;
+        font-size: 2rem;
+        width: 30rem;
+        height: 4rem;
+        border-radius: 1rem;
+        border: solid 0.2rem $secondary-color;
+        margin: 2rem;
+    }
+}
