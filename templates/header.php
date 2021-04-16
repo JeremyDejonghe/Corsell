@@ -1,3 +1,18 @@
+<?php 
+if(isset($_SESSION["user_category"]) && $_SESSION["user_category"]== 1){
+    $url= "espacepirate"; 
+}
+elseif(isset($_SESSION["user_category"]) && $_SESSION["user_category"]== 2){
+    $url= "espacemarchand"; 
+}
+elseif(isset($_SESSION["user_category"]) && $_SESSION["user_category"]== 1){
+    $url="espacecorsaire";
+}
+else{
+    $url= "";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -25,13 +40,25 @@
                 <label for="inputSearch"></label>
                 <input type="text" name="search" id="inputSearch" placeholder="Rechercher un produit">
             </form>
+            <?php if(!empty($_SESSION["user_name"])){?>
             <div class="bonjour">
-                <a href="http://">
+                <a href="./<?=$url?>">
+                    <p>Bonjour, <span><?= $_SESSION["user_name"] ?></span></p>
+
+                    <p>Compte</p>
+                </a>
+            </div>
+           
+            <?php }else{?>
+            <div class="bonjour">
+                <a href="./connexion" >
                     <p>Bonjour, <span>Identifiez-vous</span></p>
 
                     <p>Compte</p>
                 </a>
             </div>
+            <?php } ?>
+
             <div class="command">
                 <a href="">
                     <p>Vos</p>
@@ -46,7 +73,16 @@
                     </svg>
                     <p>Coffre</p>
                 </a>
+            </div> 
+            <?php if(!empty($_SESSION["user_name"])){?>
+            <div class="logout">
+               <a href="./logout">Se déconnecter</a>
             </div>
+            <?php }else{?>
+                <div class="logout-hiden">
+               
+               </div>
+               <?php }?>
             <a href=""><svg class="note" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="iconify iconify--mdi" width="32" height="32" viewBox="0 0 24 24">
                     <path d="M12 3v10.55A4 4 0 1014 17V7h4V3m-1.5 17a1.5 1.5 0 111.5-1.5 1.5 1.5 0 01-1.5 1.5z" fill="currentColor" />
                 </svg></a>

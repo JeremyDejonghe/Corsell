@@ -21,3 +21,8 @@ RewriteRule ^essentials$ ./index.php?page=essentials
 RewriteRule ^connexion$ ./index.php?page=connexion
 RewriteRule ^construction$ ./construct.php
 RewriteRule ^search$ ./index.php?page=search&%{QUERY_STRING}
+RewriteRule ^logout$ ./logout.php
+RewriteRule ^espacepirate$ ./index.php?page=espacepirate
+RewriteRule ^espacemarchand$ ./index.php?page=espacemarchand
+RewriteRule ^espacepirate$ ./index.php?page=espacecorsaire
+
