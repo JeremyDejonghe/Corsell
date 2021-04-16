@@ -79,6 +79,11 @@ $data = array(
 		"model" => "SearchModel",
 		"view" => "SearchView",
 		"controller" => "SearchController"
+	),
+	"security" => array(
+		"model" => "SecurityModel",
+		"view" => "SecurityView",
+		"controller" => "SecurityController"
 	)
 );
 

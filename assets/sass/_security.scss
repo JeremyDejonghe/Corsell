@@ -1,0 +1,25 @@
+.div-p-title-registration {
+    position: absolute;
+    top: 4.5rem;
+    right: 50rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: $text_font, Courier, monospace;
+    max-width: 32rem;
+    p {
+        margin: 0;
+    }
+}
+
+.connexion-container {
+    .element-block {
+        a {
+            font-size: 2rem;
+            color: $fonts_secondary_color;
+            border-radius: 1rem;
+            margin: 2rem;
+            padding: 1.5rem 2rem;
+            background-color: $secondary_color;
+        }
+    }
+}
