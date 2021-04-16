@@ -9,10 +9,10 @@ require_once("header-soft.php");
 <main class="connexion-container">
     <div class="element-block">
         <h2>Option de sécurité</h2>
-        <a href="./edit-user">
+        <a class="btn-security"href="./edit-user">
             Éditer vos informations personnelles
         </a>
-        <a href="./edit-password">
+        <a class="btn-security" href="./edit-password">
             Changer de mot de passe
         </a>
     </div>

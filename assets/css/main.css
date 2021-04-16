@@ -1303,7 +1303,7 @@ body {
   margin: 0;
 }
 
-.connexion-container .element-block a {
+.connexion-container .element-block .btn-security {
   font-size: 2rem;
   color: #F5F5F5;
   border-radius: 1rem;
