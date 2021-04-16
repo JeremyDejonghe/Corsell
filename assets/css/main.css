@@ -1334,4 +1334,26 @@ body {
   }
 }
 
+.div-p-title-registration {
+  position: absolute;
+  top: 4.5rem;
+  right: 50rem;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Spectral", serif, Courier, monospace;
+  max-width: 32rem;
+}
+.div-p-title-registration p {
+  margin: 0;
+}
+
+.connexion-container .element-block .btn-security {
+  font-size: 2rem;
+  color: #F5F5F5;
+  border-radius: 1rem;
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  background-color: #063D40;
+}
+
 /*# sourceMappingURL=main.css.map */
