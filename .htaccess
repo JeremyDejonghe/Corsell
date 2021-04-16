@@ -18,3 +18,4 @@ RewriteRule ^brands&([0-9]+)$ ./index.php?page=branddetail&id=$1
 RewriteRule ^essentials$ ./index.php?page=essentials
 RewriteRule ^connexion$ ./index.php?page=connexion
 RewriteRule ^construction$ ./construct.php
+RewriteRule ^search$ ./index.php?page=search&%{QUERY_STRING}

@@ -69,8 +69,12 @@ $data = array(
 		"model" => "ConnexionModel",
 		"view" => "ConnexionView",
 		"controller" => "ConnexionController"
+	),
+	"search" => array(
+		"model" => "SearchModel",
+		"view" => "SearchView",
+		"controller" => "SearchController"
 	)
-
 );
 
 $find = false;
