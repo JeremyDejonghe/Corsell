@@ -60,10 +60,21 @@ $data = array(
 		"view" => "LastnewView",
 		"controller" => "LastnewController"
 	),
+	"essentials" => array(
+		"model" => "EssentialsModel",
+		"view" => "EssentialsView",
+		"controller" => "EssentialsController"
+	), 
 	"connexion" => array(
 		"model" => "ConnexionModel",
 		"view" => "ConnexionView",
 		"controller" => "ConnexionController"
+	),
+	
+	"registration" => array(
+		"model" => "RegistrationModel",
+		"view" => "RegistrationView",
+		"controller" => "RegistrationController"
 	)
 
 );

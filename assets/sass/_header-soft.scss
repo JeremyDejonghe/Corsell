@@ -1,0 +1,27 @@
+.body-header-soft {
+  position: relative;
+  
+}
+.header-header-soft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .logo-header-soft {
+   
+    width: 18rem;
+
+    img {
+      width: 100%;
+    }
+    .title-header-soft {
+      h1 {
+        font-size: 4rem;
+        margin: 0;
+      }
+    }
+  }
+}

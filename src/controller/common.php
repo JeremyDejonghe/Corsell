@@ -10,4 +10,5 @@ class CommonController
         $res = $query->fetchAll();
         return $res;
     }
+    
 }
