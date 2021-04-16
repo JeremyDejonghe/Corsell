@@ -98,7 +98,7 @@ else{
             <a href="./lastnew">
                 <p>Dernières Nouveautés</p>
             </a>
-            <a href="">
+            <a href="./essentials">
                 <p>Les essentiels du pirate</p>
             </a>
             <a href="./categorydetail&4">
