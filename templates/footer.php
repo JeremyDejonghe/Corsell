@@ -28,7 +28,7 @@
         <a href="./construction">
             <p>Accessibilité</p>
         </a>
-        <a href="./construction">
+        <a href="./erre">
             <p>Cor-sell Erre</p>
         </a>
     </div>

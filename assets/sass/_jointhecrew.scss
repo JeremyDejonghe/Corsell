@@ -1,0 +1,28 @@
+.main-jointhecrew {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    .div-img-jointhecrew {
+        align-items: center;
+        max-width: 840px;
+        img {
+            max-width: 100%;
+        }
+        iframe {
+            width: 800px;
+            height: 500px;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .div-img-jointhecrew {
+            iframe {
+                width: 400px;
+                height: 200px;
+            }
+        }
+    }
+
+ 
+
+}
