@@ -2,6 +2,10 @@ CREATE DATABASE corsell_db;
 
 use corsell_db;
 
+ALTER DATABASE `corsell_db`
+DEFAULT CHARACTER SET utf8
+DEFAULT COLLATE utf8_general_ci;
+
 CREATE TABLE users_category (
     id TINYINT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50) NOT NULL

@@ -1,36 +1,37 @@
 <?php
 require("cryptPassword.php");
 class RegistrationController extends CryptPasswordController
-    {
-        private $model;
+{
+    private $model;
 
-        public function __construct(RegistrationModel $model)
+    public function __construct(RegistrationModel $model)
     {
         $this->model = $model;
-        
     }
 
-    public function getDataForm() {
+    public function getDataForm()
+    {
         return array(
             "email" => $this->model->email,
             "emailConfirm" => $this->model->emailConfirm,
             "password" => $this->model->password,
             "passwordConfirm" => $this->model->passwordConfirm,
-            "firstname"=>$this->model->firstname,
-            "lastname"=>$this->model->lastname,
-            "age"=>$this->model->age,
-            "pseudo"=>$this->model->pseudo,
-            "avatar"=>$this->model->avatar,
-            "adress"=>$this->model->adress,
-            "user_category"=>$this->model->id_user_category
+            "firstname" => $this->model->firstname,
+            "lastname" => $this->model->lastname,
+            "age" => $this->model->age,
+            "pseudo" => $this->model->pseudo,
+            "avatar" => $this->model->avatar,
+            "adress" => $this->model->adress,
+            "user_category" => $this->model->id_user_category
 
-           
 
-         
+
+
         );
     }
 
-    public function validateForm() {
+    public function validateForm()
+    {
         if (($this->model->email != $this->model->emailConfirm) || ($this->model->password != $this->model->passwordConfirm)) {
             return false;
         } else {
@@ -40,7 +41,7 @@ class RegistrationController extends CryptPasswordController
             $number = preg_match("/[0-9]/", $this->model->password);
             // Caractère spécial
             $specialChar = preg_match("/[^a-zA-Z0-9]/", $this->model->password);
-    
+
             if (!$uppercase || !$lowercase || !$number || !$specialChar || strlen($this->model->password) < 8) {
                 return false;
             }
@@ -51,7 +52,7 @@ class RegistrationController extends CryptPasswordController
 
 
 
-    public function addUser() : bool
+    public function addUser(): bool
     {
         $password = $this->cryptPassword($this->model->password);
 
@@ -66,16 +67,17 @@ class RegistrationController extends CryptPasswordController
         $query->bindParam(":avatar", $this->model->avatar);
         $query->bindParam(":user_category", $this->model->id_user_category);
 
- 
-        if ($query->execute()) { 
+
+        if ($query->execute()) {
             return true;
         } else {
             return false;
         }
     }
-    public function getJobs(){
+    public function getJobs()
+    {
         $query = $this->model->db->query("SELECT * FROM users_category LIMIT 0,2");
         $res = $query->fetchAll();
-        return $res; 
+        return $res;
     }
 }

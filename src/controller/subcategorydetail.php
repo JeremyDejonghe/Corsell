@@ -7,7 +7,6 @@ class SubcategorydetailController extends CommonController
     public function __construct(SubcategorydetailModel $model)
     {
         $this->model = $model;
-
     }
     public function getProductSubCategory()
     {
@@ -16,8 +15,8 @@ class SubcategorydetailController extends CommonController
         inner join subcategory as s 
         on p.id_subcategory = s.id 
         where s.id=:id");
-        $query->bindParam(":id",$this->model->id,PDO::PARAM_INT);
-        $query->execute(); 
+        $query->bindParam(":id", $this->model->id, PDO::PARAM_INT);
+        $query->execute();
 
         $res = $query->fetchAll();
         return $res;
@@ -25,8 +24,8 @@ class SubcategorydetailController extends CommonController
     public function getNameSubCategory()
     {
         $query = $this->model->db->prepare("select name from subcategory where id=:id");
-        $query->bindParam(":id",$this->model->id,PDO::PARAM_INT);
-        $query->execute(); 
+        $query->bindParam(":id", $this->model->id, PDO::PARAM_INT);
+        $query->execute();
 
         $res = $query->fetch(PDO::FETCH_ASSOC);
         return $res;
