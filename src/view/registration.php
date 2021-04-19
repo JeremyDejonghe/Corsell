@@ -12,12 +12,13 @@ class RegistrationView
 
         if (!empty($_POST)) {
             $data = $this->controller->getDataForm();
-            header("Location: connexion");
+            
             if (!$this->controller->validateForm()) {
                 $errors["message"] = "L'email ou le mot de passe ne correspondent pas, le mot de passe doit contenir 8 caractères minimum, une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial";
             }
             if (empty($errors)) {
                 if ($this->controller->addUser()) {
+                    header("Location: connexion");
                 } else {
                     $message = "Erreur de bdd";
                 }

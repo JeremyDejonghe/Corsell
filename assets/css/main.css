@@ -711,6 +711,9 @@ body {
   align-items: center;
   padding: 4rem;
 }
+.categories-container .elements-container .product-footer .price-wrapper .price {
+  text-decoration: line-through;
+}
 .categories-container .elements-container .product-footer a {
   display: flex;
 }
@@ -1003,6 +1006,7 @@ body {
 }
 .container-subcategorydetail .container-img-subcategorydetail a {
   margin-right: 3rem;
+  flex-basis: 15%;
 }
 .container-subcategorydetail .container-img-subcategorydetail .div-subcategorydetail {
   position: relative;
@@ -1194,7 +1198,7 @@ body {
 .main-registration .div-p-title-registration {
   position: absolute;
   top: 4.5rem;
-  right: 50rem;
+  right: 20%;
   font-size: 2rem;
   font-weight: 600;
   font-family: "Spectral", serif, Courier, monospace;

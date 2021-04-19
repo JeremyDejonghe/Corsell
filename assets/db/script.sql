@@ -20,7 +20,7 @@ CREATE TABLE users (
     age TINYINT NOT NULL,
     email VARCHAR(100) NOT NULL,
     password VARCHAR(255) NOT null,
-    avatar VARCHAR(50),
+    avatar TEXT,
     prime BOOL DEFAULT false,
     id_users_category TINYINT NOT NULL,
     FOREIGN KEY (id_users_category) REFERENCES users_category(id)
@@ -49,13 +49,14 @@ CREATE TABLE commands (
 CREATE TABLE brands (
     id SMALLINT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50) NOT NULL,
-    picture VARCHAR(255) NOT NULL
+    picture TEXT NOT NULL,
+    description TEXT
 );
 
 CREATE TABLE category (
     id TINYINT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50) NOT NULL,
-    picture VARCHAR(255) NOT NULL
+    picture TEXT NOT NULL
 );
 
 CREATE TABLE subcategory (
@@ -68,7 +69,7 @@ CREATE TABLE subcategory (
 CREATE TABLE products (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50) NOT NULL,
-    picture VARCHAR(255) NOT NULL,
+    picture TEXT NOT NULL,
     description TEXT NOT NULL,
     price INT NOT NULL,
     promo INT,
@@ -77,9 +78,11 @@ CREATE TABLE products (
     id_category TINYINT,
     id_brands SMALLINT,
     id_subcategory TINYINT,
+    id_seller INT,
     FOREIGN KEY (id_subcategory) REFERENCES subcategory(id),
     FOREIGN KEY (id_category) REFERENCES category(id),
-    FOREIGN KEY (id_brands) REFERENCES brands(id)
+    FOREIGN KEY (id_brands) REFERENCES brands(id),
+    FOREIGN KEY (id_seller) REFERENCES users(id)
 );
 
 CREATE TABLE products_command (
@@ -95,11 +98,11 @@ VALUES
 ("Marchand"),
 ("Corsaire");
 
-INSERT INTO brands (name,picture)
+INSERT INTO brands (name,picture, description)
 VALUES
-('Anchor','Anchor.png'),
-('Los Piratas','Los-Piratas.png'),
-('Shark','Shark.png');
+('Anchor','Anchor.png', "Anchor est une société américaine créée en 900 par Philip Knight et Bill Bowerman. Basée à Beaverton dans l'Oregon, elle est spécialisée dans la fabrication d'articles."),
+('Los Piratas','Los-Piratas.png', "L'idée de Los Piratas naît en 970 chez Niestlé : la multinationale suisse imagine alors un concept constitué d'un système intégré fermé où l'on introduirait des produits. La première application brevetée remonte ainsi à 1000, selon un procédé inventé par l'ingénieur vaudois Éric Favre3."),
+('Shark','Shark.png', "La couche-culotte jetable Sharks fut inventée par l'ingénieur chimiste Victor Mills (897-997), alors qu'il travaillait chez Procter & Gamble dans les années 950, mais l'invention du concept revient à la britannique Valerie Hunter Gordon (921-1016) pour la société Robinson and Sons en 949 avec la gamme Paddi Pads, leader jusqu'en 960.");
 
 INSERT INTO category (name,picture)
 VALUES
@@ -195,12 +198,12 @@ VALUES
 ("Cheval","Horse.jpg","Le cheval est un grand mammifère herbivore et ongulé à sabot unique ; c'est l'une des espèces de la famille des Équidés, lesquelles ont évolué, au cours des derniers 45 à 55 millions d'années, à partir d'un petit mammifère possédant plusieurs doigts.",2000,0,3,19,2,3,6),
 ("Écureuils volant","Flying-squirrel.png","Le terme écureuil [ekyʁœj] est un nom vernaculaire ambigu qui désigne en français de nombreuses espèces de rongeurs grimpeurs de taille moyenne, parfois même « volants ». Leur queue, plus ou moins touffue selon les espèces, forme un panache ou un plumeau caractéristique.",69,0,48,34,2,1,2),
 ("Perroquet","Parrot.jpg","Les perroquets sont des oiseaux des forêts ; il en existe 350 espèces différentes, connues sous des noms variés, tels que ara, perruche, cacatoès... ... Ce sont des oiseaux souvent très colorés. Ils ont un gros bec crochu, qui leur sert à manger des graines, des fruits, et des noix (fruits charnus).",1800,0,56,89,1,1,2),
-("Mouette","Seagull.jpg","Mouette est un nom vernaculaire ambigu en français. On nomme mouettes les oiseaux de plusieurs genres de la sous-famille des Larinae et de la tribu des Larini, qui comprend aussi les goélands.",2,1,200,3,1,1,2),
+("Mouette","Seagull.jpg","Mouette est un nom vernaculaire ambigu en français. On nomme mouettes les oiseaux de plusieurs genres de la sous-famille des Larinae et de la tribu des Larini, qui comprend aussi les goélands.",8,4,200,3,1,1,2),
 ("Macareu","Puffin.jpg","Le Macareux moine, également dit « perroquet de mer », est une espèce d'oiseau marin pélagique nord-atlantique qui vit en haute mer, sauf lors de sa reproduction qui le contraint à rejoindre la terre ferme où il niche sur les pentes enherbées, les îles ou sur des falaises.",340,320,64,62,1,1,2),
 ("Singe","Monkey.jpg","Les singes sont des mammifères de l'ordre des primates, généralement arboricoles, à la face souvent glabre et caractérisés par un encéphale développé et de longs membres terminés par des doigts.",949,0,49,1001,1,1,1),
 ("Tortue","Tortoise.jpg","Les Tortues, ou Chéloniens, forment un ordre de reptiles dont la caractéristique est d'avoir une carapace.",400,0,14,12,1,1,1),
 ("Chien","Dog.jpg","Le Chien est la sous-espèce domestique de Canis lupus, un mammifère de la famille des Canidés, laquelle comprend également le dingo, chien domestique retourné à l'état sauvage.",1200,200,300,2,1,1,1),
-("Chat","Cat.jpg","Le Chat domestique est la sous-espèce issue de la domestication du Chat sauvage, mammifère carnivore de la famille des Félidés. Il est l’un des principaux animaux de compagnie et compte aujourd’hui une cinquantaine de races différentes reconnues par les instances de certification.",150,1499,6,124,1,1,1),
+("Chat","Cat.jpg","Le Chat domestique est la sous-espèce issue de la domestication du Chat sauvage, mammifère carnivore de la famille des Félidés. Il est l’un des principaux animaux de compagnie et compte aujourd’hui une cinquantaine de races différentes reconnues par les instances de certification.",1500,1499,6,124,1,1,1),
 ("Tricorne","Tricorne.png","Le tricorne est un chapeau très en vogue au XVIIIᵉ siècle, de forme triangulaire à bords repliés sur la calotte en trois cornes, d’où son nom. Pour autant, il fallut attendre le XIXᵉ siècle pour que ce couvre-chef prenne ce nom. Il est apparu vers 1690. Ce sont les militaires qui en répandirent l’usage.",118,0,218,71,3,5,13),
 ("Chapeau de paille","StrawHat.jpg","Le chapeau de paille est un chapeau qui est tressé avec de la paille ou du roseaux. Il est conçu pour protéger la tête des ardeurs du soleil. Déjà porté dans l'Antiquité, on n'en connaît pas les premières formes.",2,0,74,112,3,5,13),
 ("Casque en cuir","LeatherHat.jpg","Le Heaumes Médiévaux est un casque de la chevalerie qui protège la totalité de la tête. Il est constitué d'une cervelière, d'une plaque faciale couvrant le visage et percée de trous pour la vision et l'aération, et d'une plaque protégeant la nuque et entourant toute la tête.",33,0,26,5,3,5,13),
