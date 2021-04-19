@@ -94,6 +94,11 @@ $data = array(
 		"model" => "Reset_PasswordModel",
 		"view" => "Reset_PasswordView",
 		"controller" => "Reset_PasswordController"
+	),
+	"espacepirate" => array(
+		"model" => "EspacePirateModel",
+		"view" => "EspacePirateView",
+		"controller" => "EspacePirateController"
 	)
 );
 

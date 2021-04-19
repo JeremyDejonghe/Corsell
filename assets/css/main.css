@@ -1364,4 +1364,70 @@ body {
   background-color: #063D40;
 }
 
+.espaceUser-container {
+  padding: 6rem 6rem;
+  padding-left: 36rem;
+  position: relative;
+}
+.espaceUser-container .espaceUser-title {
+  position: absolute;
+  left: 2%;
+  top: 10%;
+  width: auto;
+}
+.espaceUser-container .espaceUser-title h1 {
+  font-family: "Spectral", serif;
+  font-size: 2rem;
+  text-align: center;
+}
+.espaceUser-container .espaceUser-title .avatar-user {
+  max-width: 25rem;
+  max-height: 25rem;
+}
+.espaceUser-container .espaceUser-title .avatar-user img {
+  width: 100%;
+  border: solid 0.2rem #063D40;
+}
+.espaceUser-container .baniere-Usercategories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.espaceUser-container .baniere-Usercategories .user-category {
+  display: flex;
+  width: 35rem;
+  height: 10rem;
+  margin-top: 2rem;
+  margin-right: 5rem;
+  background-color: #F5F5F5;
+  justify-content: space-around;
+  border-radius: 1rem;
+  border: solid 0.1rem #063D40;
+}
+.espaceUser-container .baniere-Usercategories .user-category .img-Usercategory {
+  display: flex;
+  align-items: center;
+  width: 7rem;
+  height: 7rem;
+  padding: 0.5rem;
+}
+.espaceUser-container .baniere-Usercategories .user-category .img-Usercategory img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.espaceUser-container .baniere-Usercategories .user-category .title-Usercategory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Spectral", serif;
+  flex-wrap: wrap;
+  flex-basis: 60%;
+}
+.espaceUser-container .baniere-Usercategories .user-category .title-Usercategory h2 {
+  margin: 0;
+}
+.espaceUser-container .baniere-Usercategories .user-category .title-Usercategory p {
+  margin: 0;
+}
+
 /*# sourceMappingURL=main.css.map */
