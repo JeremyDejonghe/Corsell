@@ -103,7 +103,7 @@ if (isset($_SESSION["user_category"]) && $_SESSION["user_category"] == 1) {
             <div class="note">
                 <audio preload="auto" loop id="myAudio" src="./assets/audio/wellerman.mp3">
                 </audio>
-                <img src="assets/img/MdiMusicNoteEighthDotted.svg" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--mdi" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3m-1.5 17a1.5 1.5 0 1 1 1.5-1.5a1.5 1.5 0 0 1-1.5 1.5z" fill="currentColor"></path></svg>
             </div>
         </div>
         <div class="nav2">

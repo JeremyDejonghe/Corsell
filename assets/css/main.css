@@ -482,6 +482,10 @@ header .nav1 .note {
   position: absolute;
   right: 0.5rem;
   top: 0.5rem;
+  cursor: pointer;
+}
+header .nav1 .note svg:hover {
+  color: #cf5a2b;
 }
 header .nav2 {
   background-color: #063D40;
