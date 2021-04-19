@@ -94,6 +94,11 @@ $data = array(
 		"model" => "Reset_PasswordModel",
 		"view" => "Reset_PasswordView",
 		"controller" => "Reset_PasswordController"
+	),
+	"addproduct" => array(
+		"model" => "AddProductModel",
+		"view" => "AddProductView",
+		"controller" => "AddProductController"
 	)
 );
 

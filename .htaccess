@@ -32,5 +32,7 @@ RewriteRule ^security$ ./index.php?page=security
 RewriteRule ^edit-user$ ./index.php?page=edit_user
 RewriteRule ^edit-password$ ./index.php?page=reset_password
 RewriteRule ^moncoffre$ ./index.php?page=moncoffre
+RewriteRule ^addproduct$ ./index.php?page=addproduct
+
 
 
