@@ -12,7 +12,7 @@ require_once("header.php");
             <div class="avatar-user"><img src="<?= $userInfos["avatar"] ?>" alt=""></div>
         </div>
         <div class="user-categories">
-            <a href="./mesCommandes">
+            <a href="./mescommandes">
                 <div class="user-category">
                     <div class="img-Usercategory">
                         <img src="assets/img/EspaceUserImg/caisse.png" alt="">
@@ -48,7 +48,7 @@ require_once("header.php");
                 </div>
             </a>
 
-            <a href="./mesAdresses">
+            <a href="./mesadresses">
                 <div class="user-category">
                     <div class="img-Usercategory">
                         <img src="assets/img/EspaceUserImg/adress.png" alt="">
@@ -60,7 +60,7 @@ require_once("header.php");
                 </div>
             </a>
 
-            <a href="./corsellMobile">
+            <a href="./corsellmobile">
                 <div class="user-category">
                     <div class="img-Usercategory">
                         <img src="assets/img/EspaceUserImg/Cor-sellMobile.png" alt="">
