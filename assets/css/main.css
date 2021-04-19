@@ -482,6 +482,10 @@ header .nav1 .note {
   position: absolute;
   right: 0.5rem;
   top: 0.5rem;
+  cursor: pointer;
+}
+header .nav1 .note svg:hover {
+  color: #cf5a2b;
 }
 header .nav2 {
   background-color: #063D40;
@@ -710,6 +714,9 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 4rem;
+}
+.categories-container .elements-container .product-footer .price-wrapper .price {
+  text-decoration: line-through;
 }
 .categories-container .elements-container .product-footer a {
   display: flex;
@@ -1003,6 +1010,7 @@ body {
 }
 .container-subcategorydetail .container-img-subcategorydetail a {
   margin-right: 3rem;
+  flex-basis: 15%;
 }
 .container-subcategorydetail .container-img-subcategorydetail .div-subcategorydetail {
   position: relative;
@@ -1194,7 +1202,7 @@ body {
 .main-registration .div-p-title-registration {
   position: absolute;
   top: 4.5rem;
-  right: 50rem;
+  right: 20%;
   font-size: 2rem;
   font-weight: 600;
   font-family: "Spectral", serif, Courier, monospace;
@@ -1354,6 +1362,72 @@ body {
   margin: 2rem;
   padding: 1.5rem 2rem;
   background-color: #063D40;
+}
+
+.espaceUser-container {
+  padding: 6rem 6rem;
+  padding-left: 36rem;
+  position: relative;
+}
+.espaceUser-container .espaceUser-title {
+  position: absolute;
+  left: 2%;
+  top: 10%;
+  width: auto;
+}
+.espaceUser-container .espaceUser-title h1 {
+  font-family: "Spectral", serif;
+  font-size: 2rem;
+  text-align: center;
+}
+.espaceUser-container .espaceUser-title .avatar-user {
+  max-width: 25rem;
+  max-height: 25rem;
+}
+.espaceUser-container .espaceUser-title .avatar-user img {
+  width: 100%;
+  border: solid 0.2rem #063D40;
+}
+.espaceUser-container .baniere-Usercategories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.espaceUser-container .baniere-Usercategories .user-category {
+  display: flex;
+  width: 35rem;
+  height: 10rem;
+  margin-top: 2rem;
+  margin-right: 5rem;
+  background-color: #F5F5F5;
+  justify-content: space-around;
+  border-radius: 1rem;
+  border: solid 0.1rem #063D40;
+}
+.espaceUser-container .baniere-Usercategories .user-category .img-Usercategory {
+  display: flex;
+  align-items: center;
+  width: 7rem;
+  height: 7rem;
+  padding: 0.5rem;
+}
+.espaceUser-container .baniere-Usercategories .user-category .img-Usercategory img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.espaceUser-container .baniere-Usercategories .user-category .title-Usercategory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Spectral", serif;
+  flex-wrap: wrap;
+  flex-basis: 60%;
+}
+.espaceUser-container .baniere-Usercategories .user-category .title-Usercategory h2 {
+  margin: 0;
+}
+.espaceUser-container .baniere-Usercategories .user-category .title-Usercategory p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

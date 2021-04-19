@@ -1,6 +1,7 @@
 .categories-container {
     background-color: #f5f5f5;
     display: flex;
+
     .elements-container {
         padding: 3rem;
         flex-basis: 85%;
@@ -25,32 +26,31 @@
 .container-subcategorydetail {
     min-width: 60%;
     display: flex;
+
     flex-direction: column;
     .container-img-subcategorydetail {
         display: flex;
+
         flex-wrap: wrap;
         justify-content: space-around;
-        a{
+        a {
             margin-right: 3rem;
+            flex-basis: 15%;
         }
         .div-subcategorydetail {
             position: relative;
-        
 
-            h2{
+            h2 {
                 text-align: center;
                 // background: $primary_color;
-                margin:0;
+                margin: 0;
                 padding: 1rem;
-                
             }
             .img-subcategorydetail {
                 width: 200px;
-                border:solid black 2px;
-               
-                
+                border: solid black 2px;
             }
-            .price-img-subcategorydetail{
+            .price-img-subcategorydetail {
                 margin-right: 2rem;
                 position: absolute;
                 padding: 1rem;
@@ -59,9 +59,9 @@
                 left: -20px;
                 background: $secondary_color;
                 color: $fonts_secondary_color;
-                border:solid black 1px;
+                border: solid black 1px;
             }
-            .price-promo-img-subcategorydetail{
+            .price-promo-img-subcategorydetail {
                 position: absolute;
                 padding: 1rem;
                 font-size: 2rem;
@@ -69,7 +69,7 @@
                 left: -20px;
                 background: $quaternary_color;
                 color: $fonts_secondary_color;
-                border:solid black 1px;
+                border: solid black 1px;
                 text-align: center;
             }
         }

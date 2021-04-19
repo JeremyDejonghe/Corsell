@@ -60,6 +60,12 @@
             justify-content: space-around;
             align-items: center;
             padding: 4rem;
+            .price-wrapper {           
+                .price {
+                text-decoration: line-through;
+            }
+            }
+            
             a {
                 display: flex;
             }

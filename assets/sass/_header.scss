@@ -9,74 +9,75 @@ header {
     .logo {
         position: absolute;
         width: 12rem;
-        top:0.2rem;
-        left:0.2rem;
+        top: 0.2rem;
+        left: 0.2rem;
         img {
             width: 100%;
         }
     }
     .nav1 {
-        padding: 2rem  13rem;
-        a:hover{
+        padding: 2rem 13rem;
+        a:hover {
             text-decoration: underline;
-           
         }
-        p{
+        p {
             margin: 0;
         }
-            
-        
+
         display: flex;
         flex-wrap: wrap;
-      
+
         color: $fonts_primary_color;
         justify-content: space-around;
         align-items: center;
         .title {
-            h1{
+            h1 {
                 font-size: 4rem;
                 margin: 0;
             }
         }
         .search {
             width: 45rem;
-            input{
-              width: 100%;
-              height: 3.5rem;  
-              border-radius: 0.5rem;
-              border: 0.2rem solid $secondary_color;
+            input {
+                width: 100%;
+                height: 3.5rem;
+                border-radius: 0.5rem;
+                border: 0.2rem solid $secondary_color;
             }
         }
         .bonjour {
-            a{
-                p{
-                    span{
+            a {
+                p {
+                    span {
                         font-weight: 600;
                     }
                 }
             }
         }
-       
+
         .panier {
             a {
                 display: flex;
                 flex-direction: row;
-                p{
+                p {
                     align-self: flex-end;
                     margin: 0 0 0.5rem 0;
                 }
-                
             }
         }
-        .logout{
+        .logout {
             display: flex;
             align-self: flex-end;
             margin-bottom: 0.5rem;
         }
-        .note{
+        .note {
             position: absolute;
             right: 0.5rem;
             top: 0.5rem;
+            cursor: pointer;
+            svg:hover {
+                color: #cf5a2b;
+            }
         }
     }
     .nav2 {
@@ -86,10 +87,10 @@ header {
         justify-content: center;
         padding: 0 12rem;
         flex-wrap: wrap;
-        a{
+        a {
             margin-right: 5rem;
-            p:hover{
-text-decoration: underline;
+            p:hover {
+                text-decoration: underline;
             }
         }
     }

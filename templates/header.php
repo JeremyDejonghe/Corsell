@@ -1,15 +1,12 @@
-<?php 
-if(isset($_SESSION["user_category"]) && $_SESSION["user_category"]== 1){
-    $url= "espacepirate"; 
-}
-elseif(isset($_SESSION["user_category"]) && $_SESSION["user_category"]== 2){
-    $url= "espacemarchand"; 
-}
-elseif(isset($_SESSION["user_category"]) && $_SESSION["user_category"]== 1){
-    $url="espacecorsaire";
-}
-else{
-    $url= "";
+<?php
+if (isset($_SESSION["user_category"]) && $_SESSION["user_category"] == 1) {
+    $url = "espacepirate";
+} elseif (isset($_SESSION["user_category"]) && $_SESSION["user_category"] == 2) {
+    $url = "espacemarchand";
+} elseif (isset($_SESSION["user_category"]) && $_SESSION["user_category"] == 1) {
+    $url = "espacecorsaire";
+} else {
+    $url = "";
 }
 ?>
 
@@ -40,72 +37,74 @@ else{
                 <label for="inputSearch"></label>
                 <input type="text" name="search" id="inputSearch" placeholder="Rechercher un produit">
             </form>
-            <?php if(!empty($_SESSION["user_name"])){?>
-            <div class="bonjour">
-                <a href="./<?=$url?>">
-                    <p>Bonjour, <span><?= $_SESSION["user_name"] ?></span></p>
+            <?php if (!empty($_SESSION["user_name"])) { ?>
+                <div class="bonjour">
+                    <a href="./<?= $url ?>">
+                        <p>Bonjour, <span><?= $_SESSION["user_name"] ?></span></p>
 
-                    <p>Compte</p>
-                </a>
-            </div>
-           
-            <?php }else{?>
-            <div class="bonjour">
-                <a href="./connexion" >
-                    <p>Bonjour, <span>Identifiez-vous</span></p>
+                        <p>Compte</p>
+                    </a>
+                </div>
 
-                    <p>Compte</p>
-                </a>
-            </div>
+            <?php } else { ?>
+                <div class="bonjour">
+                    <a href="./connexion">
+                        <p>Bonjour, <span>Identifiez-vous</span></p>
+
+                        <p>Compte</p>
+                    </a>
+                </div>
             <?php } ?>
- <?php if(!empty($_SESSION["user_name"])){?>
-            <div class="command">
-                <a href="./command">
-                    <p>Vos</p>
-
-                    <p>Commandes</p>
-                </a>
-            </div>
-            <?php }else{?>
+            <?php if (!empty($_SESSION["user_name"])) { ?>
                 <div class="command">
-                <a href="./connexion">
-                    <p>Vos</p>
+                    <a href="./command">
+                        <p>Vos</p>
 
-                    <p>Commandes</p>
-                </a>
-            </div>
-                <?php } ?>
-                <?php if(!empty($_SESSION["user_name"])){?>
-            <div class="panier">
-                <a href="./moncoffre">
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="iconify iconify--mdi" width="50" height="50" viewBox="0 0 24 24">
-                        <path d="M5 4h14a3 3 0 013 3v4h-7v-1H9v1H2V7a3 3 0 013-3m6 7h2v2h-2v-2m-9 1h7v1l2 2h2l2-2v-1h7v8H2v-8z" fill="currentColor" />
-                    </svg>
-                    <p>Coffre</p>
-                </a>
-            </div> 
-            <?php }else{?>
+                        <p>Commandes</p>
+                    </a>
+                </div>
+            <?php } else { ?>
+                <div class="command">
+                    <a href="./connexion">
+                        <p>Vos</p>
+
+                        <p>Commandes</p>
+                    </a>
+                </div>
+            <?php } ?>
+            <?php if (!empty($_SESSION["user_name"])) { ?>
                 <div class="panier">
-                <a href="./connexion">
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="iconify iconify--mdi" width="50" height="50" viewBox="0 0 24 24">
-                        <path d="M5 4h14a3 3 0 013 3v4h-7v-1H9v1H2V7a3 3 0 013-3m6 7h2v2h-2v-2m-9 1h7v1l2 2h2l2-2v-1h7v8H2v-8z" fill="currentColor" />
-                    </svg>
-                    <p>Coffre</p>
-                </a>
-            </div> 
-                <?php } ?>
-            <?php if(!empty($_SESSION["user_name"])){?>
-            <div class="logout">
-               <a href="./logout">Se déconnecter</a>
-            </div>
-            <?php }else{?>
+                    <a href="./moncoffre">
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="iconify iconify--mdi" width="50" height="50" viewBox="0 0 24 24">
+                            <path d="M5 4h14a3 3 0 013 3v4h-7v-1H9v1H2V7a3 3 0 013-3m6 7h2v2h-2v-2m-9 1h7v1l2 2h2l2-2v-1h7v8H2v-8z" fill="currentColor" />
+                        </svg>
+                        <p>Coffre</p>
+                    </a>
+                </div>
+            <?php } else { ?>
+                <div class="panier">
+                    <a href="./connexion">
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="iconify iconify--mdi" width="50" height="50" viewBox="0 0 24 24">
+                            <path d="M5 4h14a3 3 0 013 3v4h-7v-1H9v1H2V7a3 3 0 013-3m6 7h2v2h-2v-2m-9 1h7v1l2 2h2l2-2v-1h7v8H2v-8z" fill="currentColor" />
+                        </svg>
+                        <p>Coffre</p>
+                    </a>
+                </div>
+            <?php } ?>
+            <?php if (!empty($_SESSION["user_name"])) { ?>
+                <div class="logout">
+                    <a href="./logout">Se déconnecter</a>
+                </div>
+            <?php } else { ?>
                 <div class="logout-hiden">
-               
-               </div>
-               <?php }?>
-            <svg class="note" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="iconify iconify--mdi" width="32" height="32" viewBox="0 0 24 24">
-                    <path d="M12 3v10.55A4 4 0 1014 17V7h4V3m-1.5 17a1.5 1.5 0 111.5-1.5 1.5 1.5 0 01-1.5 1.5z" fill="currentColor" />
-                </svg>
+
+                </div>
+            <?php } ?>
+            <div class="note">
+                <audio preload="auto" loop id="myAudio" src="./assets/audio/wellerman.mp3">
+                </audio>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--mdi" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3m-1.5 17a1.5 1.5 0 1 1 1.5-1.5a1.5 1.5 0 0 1-1.5 1.5z" fill="currentColor"></path></svg>
+            </div>
         </div>
         <div class="nav2">
             <a href="./bestsells">
@@ -114,7 +113,7 @@ else{
             <a href="./categories">
                 <p>Nos catégories</p>
             </a>
-            
+
             <a href="./lastnew">
                 <p>Dernières Nouveautés</p>
             </a>

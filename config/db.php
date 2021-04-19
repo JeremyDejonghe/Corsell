@@ -3,7 +3,7 @@ class DB {
 	private $db;
 
 	public function __construct($hostname, $username, $password, $database, $port = NULL) {
-        $this->db = new PDO("mysql:host=$hostname;dbname=$database", $username, $password);
+        $this->db = new PDO("mysql:host=$hostname;dbname=$database;charset=UTF8", $username, $password);
 	}
 
 	public function query($sql) {
