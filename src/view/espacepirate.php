@@ -14,6 +14,7 @@ class EspacePirateView
 
         if (isset($_SESSION["session_id"])&& $_SESSION["user_category"] == 1) {
             $userInfos= $this->controller->getUserInfos();
+            $products=$this->controller->getProductsforUser();
             require($this->template);
             
         } else {

@@ -33,5 +33,10 @@ RewriteRule ^edit-user$ ./index.php?page=edit_user
 RewriteRule ^edit-password$ ./index.php?page=reset_password
 RewriteRule ^moncoffre$ ./index.php?page=moncoffre
 RewriteRule ^espacePirate$ ./index.php?page=espacepirate
+RewriteRule ^corsellMobile$ ./corsellMobile
+RewriteRule ^mesCommandes$ ./index.php?page=commandesPirate
+RewriteRule ^mesAdresses$ ./index.php?page=addressUser
+
+
 
 

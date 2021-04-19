@@ -1,65 +1,111 @@
 .espaceUser-container {
-    padding: 6rem 6rem;
-    padding-left: 36rem;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem;
 
-    .espaceUser-title {
-        position: absolute;
-        left: 2%;
-        top: 10%;
-        width: auto;
-        h1 {
-            font-family: $text_font;
-            font-size: 2rem;
-            text-align: center;
+    .baniere-Usercategories {
+        display: flex;
+
+        .espaceUser-title {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 20%;
+            align-items: center;
+            h1 {
+                font-family: $text_font;
+                font-size: 2rem;
+                text-align: center;
+            }
+            .avatar-user {
+                max-width: 25rem;
+                min-width: 20rem;
+                max-height: 25rem;
+                img {
+                    width: 100%;
+                    border: solid 0.2rem $secondary_color;
+                }
+            }
         }
-        .avatar-user {
-            max-width: 25rem;
-            max-height: 25rem;
-            img {
-                width: 100%;
-                border: solid 0.2rem $secondary_color;
+
+        .user-categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            flex-basis: 80%;
+            padding: 0 10rem;
+            .user-category {
+                display: flex;
+                width: 35rem;
+                height: 10rem;
+                margin-top: 2rem;
+                margin-right: 5rem;
+                background-color: $fonts_secondary_color;
+                justify-content: space-around;
+                align-items: center;
+                border-radius: 1rem;
+                border: solid 0.1rem $secondary_color;
+                .img-Usercategory {
+                    display: flex;
+                    align-items: center;
+                    width: 7rem;
+                    height: 7rem;
+                    padding: 0.5rem;
+
+                    img {
+                        width: 100%;
+                        border-radius: 1rem;
+                    }
+                }
+                .title-Usercategory {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: $text_font;
+                    flex-wrap: wrap;
+                    flex-basis: 60%;
+                    h2 {
+                        margin: 0;
+                        font-size: 2rem;
+                        text-align: center;
+                    }
+                    p {
+                        margin: 0;
+                        font-size: 1.6rem;
+                    }
+                }
             }
         }
     }
-    .baniere-Usercategories {
+    .baniere-products {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        .user-category {
+        justify-content: space-between;
+        margin: 6rem 4rem 4rem 4rem;
+        h1 {
+            width: 100%;
+            text-decoration: underline;
+            font-size: 2.4rem;
+        }
+        a {
             display: flex;
-           width:  35rem ;
-           height: 10rem;
-            margin-top: 2rem;
-            margin-right: 5rem;
-            background-color: $fonts_secondary_color;
-            justify-content: space-around;
-            border-radius: 1rem;
-            border: solid 0.1rem $secondary_color;
-            .img-Usercategory {
-                display: flex;
-                align-items: center;
-                width: 7rem;
-                height: 7rem;
-                padding: 0.5rem;
-                
-                img {
-                    width: 100%;
-                    
-                    border-radius: 1rem;
-                }
-            }
-            .title-Usercategory {
+            flex-direction: column;
+            flex-wrap: wrap;
+            flex-basis: 12% ;
+            .product-item {
+                padding: 1rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                font-family: $text_font;
-                flex-wrap: wrap;
-                flex-basis: 60%;
-                h2 {
-                    margin: 0;
+                align-items: center;
+                img {
+                    width: 20rem;
+                    border: solid 0.1rem $secondary_color;
                 }
-                p {
+                h2 {
+                    text-align: center;
+                    font-family: $text_font;
+                    font-size: 2.2rem;
                     margin: 0;
                 }
             }

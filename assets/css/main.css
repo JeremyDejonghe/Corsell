@@ -1365,35 +1365,41 @@ body {
 }
 
 .espaceUser-container {
-  padding: 6rem 6rem;
-  padding-left: 36rem;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 6rem;
 }
-.espaceUser-container .espaceUser-title {
-  position: absolute;
-  left: 2%;
-  top: 10%;
-  width: auto;
+.espaceUser-container .baniere-Usercategories {
+  display: flex;
 }
-.espaceUser-container .espaceUser-title h1 {
+.espaceUser-container .baniere-Usercategories .espaceUser-title {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+  align-items: center;
+}
+.espaceUser-container .baniere-Usercategories .espaceUser-title h1 {
   font-family: "Spectral", serif;
   font-size: 2rem;
   text-align: center;
 }
-.espaceUser-container .espaceUser-title .avatar-user {
+.espaceUser-container .baniere-Usercategories .espaceUser-title .avatar-user {
   max-width: 25rem;
+  min-width: 20rem;
   max-height: 25rem;
 }
-.espaceUser-container .espaceUser-title .avatar-user img {
+.espaceUser-container .baniere-Usercategories .espaceUser-title .avatar-user img {
   width: 100%;
   border: solid 0.2rem #063D40;
 }
-.espaceUser-container .baniere-Usercategories {
+.espaceUser-container .baniere-Usercategories .user-categories {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  flex-basis: 80%;
+  padding: 0 10rem;
 }
-.espaceUser-container .baniere-Usercategories .user-category {
+.espaceUser-container .baniere-Usercategories .user-categories .user-category {
   display: flex;
   width: 35rem;
   height: 10rem;
@@ -1401,32 +1407,71 @@ body {
   margin-right: 5rem;
   background-color: #F5F5F5;
   justify-content: space-around;
+  align-items: center;
   border-radius: 1rem;
   border: solid 0.1rem #063D40;
 }
-.espaceUser-container .baniere-Usercategories .user-category .img-Usercategory {
+.espaceUser-container .baniere-Usercategories .user-categories .user-category .img-Usercategory {
   display: flex;
   align-items: center;
   width: 7rem;
   height: 7rem;
   padding: 0.5rem;
 }
-.espaceUser-container .baniere-Usercategories .user-category .img-Usercategory img {
+.espaceUser-container .baniere-Usercategories .user-categories .user-category .img-Usercategory img {
   width: 100%;
   border-radius: 1rem;
 }
-.espaceUser-container .baniere-Usercategories .user-category .title-Usercategory {
+.espaceUser-container .baniere-Usercategories .user-categories .user-category .title-Usercategory {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   font-family: "Spectral", serif;
   flex-wrap: wrap;
   flex-basis: 60%;
 }
-.espaceUser-container .baniere-Usercategories .user-category .title-Usercategory h2 {
+.espaceUser-container .baniere-Usercategories .user-categories .user-category .title-Usercategory h2 {
   margin: 0;
+  font-size: 2rem;
+  text-align: center;
 }
-.espaceUser-container .baniere-Usercategories .user-category .title-Usercategory p {
+.espaceUser-container .baniere-Usercategories .user-categories .user-category .title-Usercategory p {
+  margin: 0;
+  font-size: 1.6rem;
+}
+.espaceUser-container .baniere-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 6rem 4rem 4rem 4rem;
+}
+.espaceUser-container .baniere-products h1 {
+  width: 100%;
+  text-decoration: underline;
+  font-size: 2.4rem;
+}
+.espaceUser-container .baniere-products a {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 12%;
+}
+.espaceUser-container .baniere-products a .product-item {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.espaceUser-container .baniere-products a .product-item img {
+  width: 20rem;
+  border: solid 0.1rem #063D40;
+}
+.espaceUser-container .baniere-products a .product-item h2 {
+  text-align: center;
+  font-family: "Spectral", serif;
+  font-size: 2.2rem;
   margin: 0;
 }
 

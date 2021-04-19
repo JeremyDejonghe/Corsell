@@ -17,4 +17,12 @@ class EspacePirateController
         
     return $res;
     }
+
+    public function getProductsforUser(){
+
+        $res = $this->model->db->query("SELECT id, name, picture FROM products order by rand() limit 0,7 ");
+
+        return $res;
+
+    }
 }
