@@ -12,7 +12,7 @@ require_once("header-soft.php");
     <div class="container-form-registration">
         <h1>Ajouter un produit</h1>
         <?= $message ?>
-        <form action="" method="post" class="form-registration">
+        <form action="" enctype="multipart/form-data" method="post" class="form-registration">
             <div class="divone-form-registration">
 
                 <div class="form-div-registration">

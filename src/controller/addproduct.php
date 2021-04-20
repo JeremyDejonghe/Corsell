@@ -19,12 +19,14 @@ class AddProductController
             "promo" => $this->model->promo,
             "quantity" => $this->model->quantity,
             "category" => $this->model->id_category,
-            "brands" => $this->id_model->brands,
+            "brands" => $this->model->id_brands,
             "subcategory" => $this->model->id_subcategory
         );
     }
     public function addProduct()
     {
+        var_dump($this->model);
+
         $query = $this->model->db->prepare("INSERT INTO products (name,picture,description,price,promo,quantity,id_category,id_brands,id_subcategory) VALUES(:name, :picture, :description, :price, :promo, :quantity, :category, :brands, :subcategory) ");
         $query->bindParam(":name", $this->model->name);
         $query->bindParam(":picture", $this->model->picture);
@@ -43,6 +45,38 @@ class AddProductController
         }
     }
     
+    
+    /**
+     * Upload d'une image pour le matelas dans le dossier assets/img/products
+     */
+    public function uploadImage($file)
+    {
+
+        $fileTmpPath = $file["tmp_name"];
+        $fileName = $file["name"];
+        $fileType = $file["type"];
+
+        $fileNameArray = explode(".", $fileName);
+        $fileExtension = end($fileNameArray);
+        $newFileName = md5(time() . $fileName) . "." . $fileExtension;
+        var_dump($newFileName);
+
+        $fileDestPath = "./assets/img/{$newFileName}";
+
+        $allowedTypes = array("image/jpeg", "image/png");
+        if (in_array($fileType, $allowedTypes)) {
+            // Le type de fichier est bien valide on peut donc ajouter le fichier à notre serveur
+            move_uploaded_file($fileTmpPath, $fileDestPath);
+
+            $this->model->picture = $newFileName;
+        } else {
+            // Le type du fichier est incorrect
+            return false;
+        }
+
+        return true;
+    }
+
     public function getCategory()
     {
         $query = $this->model->db->query("SELECT * FROM category");

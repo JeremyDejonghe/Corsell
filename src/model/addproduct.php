@@ -2,7 +2,8 @@
 
 class AddProductModel
 {
-    
+    public $picture;
+
     public function __construct($db)
     {
         $this->db =$db;
@@ -10,7 +11,7 @@ class AddProductModel
         if(!empty($_POST))
         {
             $this->name = trim(strip_tags($_POST["name"]));
-            $this->picture = trim(strip_tags($_POST["picture"]));
+            // $this->picture = trim(strip_tags($_POST["picture"]));
             $this->description = trim(strip_tags($_POST["description"]));
             $this->price = trim(strip_tags($_POST["price"]));
             $this->promo = trim(strip_tags($_POST["promo"]));
