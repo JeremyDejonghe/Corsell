@@ -1475,17 +1475,41 @@ body {
   margin: 0;
 }
 
+.container-corsellmobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .div-header-corsellmobile {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: solid black 1px;
   border-radius: 10px;
-  margin: 20rem 70rem;
+  margin: 4% 40%;
+  text-align: center;
+  font-weight: 600;
+  padding: 3rem 0;
 }
 .div-header-corsellmobile .title-corsellmobile p {
   font-size: 2rem;
   font-weight: 600;
+}
+
+.bottom-corsellMobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.bottom-corsellMobile .svg-div-bottom-cossellMobile {
+  display: flex;
+}
+.bottom-corsellMobile .svg-div-bottom-cossellMobile div {
+  margin: 2rem 4rem;
 }
 
 /*# sourceMappingURL=main.css.map */
