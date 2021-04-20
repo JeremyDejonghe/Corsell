@@ -12,31 +12,29 @@
 </head>
 
 <body class="body-header-soft">
-    <header class="header-corsellmobile">
-        <div class="div-header-corsellmobile">
-            <div class="logo-div-header-soft">
-                <a href="./"><img src="assets/img/Cor-Sell_Logo.png" class="logo-header-soft" alt=""></a>
 
+    <div>
+        <div class="main-corsellMobile">
+            <div class="div-header-corsellmobile">
+                <div class="logo-div-header-soft">
+                    <a href="./"><img src="assets/img/Cor-Sell_Logo.png" class="logo-header-soft" alt=""></a>
+
+                </div>
+                <div class="title-corsellmobile">
+                    <h1>Cor-Sell</h1>
+                    <p>Mobile</p>
+                </div>
             </div>
-            <div class="title-corsellmobile">
-                <h1>Cor-Sell</h1>
-                <p>Mobile</p>
-            </div>
+
         </div>
 
-    </header>
+        <div class="bottom-corsellMobile">
+            <div>
+                <p>Bientôt sur</p>
+            </div>
+            <div>
 
-    <div class="main-corsellMobile">
-
-
-    </div>
-
-    <div class="bottom-corsellMobile">
-        <div>
-            <p>Bientôt sur</p>
-        </div>
-        <div>
-
+            </div>
         </div>
     </div>
     <?php
