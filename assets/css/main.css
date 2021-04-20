@@ -1482,4 +1482,27 @@ body {
   margin: 0;
 }
 
+.products-container {
+  background-color: #F5F5F5;
+  padding: 2rem;
+}
+.products-container .main-title {
+  margin: 0;
+}
+.products-container .products-banner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.products-container .products-banner a .elementcard {
+  position: relative;
+}
+.products-container .products-banner a .delete-btn {
+  background-color: #063D40;
+  color: #F5F5F5;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 /*# sourceMappingURL=main.css.map */

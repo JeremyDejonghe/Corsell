@@ -104,6 +104,11 @@ $data = array(
 		"model" => "EspaceMarchandModel",
 		"view" => "EspaceMarchandView",
 		"controller" => "EspaceMarchandController"
+	),
+	"marchandproducts" => array(
+		"model" => "MarchandProductsModel",
+		"view" => "MarchandProductsView",
+		"controller" => "MarchandProductsController"
 	)
 );
 

@@ -1,0 +1,24 @@
+.products-container {
+    background-color: $fonts_secondary_color;
+    padding: 2rem;
+    .main-title {
+        margin: 0;
+    }
+    .products-banner {
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            .elementcard {
+                position: relative;
+            }
+            .delete-btn {
+                background-color: $secondary_color;
+                color: $fonts_secondary_color;
+                border-radius: 1rem;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+}

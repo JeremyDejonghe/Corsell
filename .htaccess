@@ -38,7 +38,9 @@ RewriteRule ^moncoffre$ ./index.php?page=moncoffre
 RewriteRule ^corsellmobile$ ./corsellMobile
 RewriteRule ^mescommandes$ ./index.php?page=commandesPirate
 RewriteRule ^mesadresses$ ./index.php?page=addressUser
-RewriteRule ^mesproduitsvendus$ ./index.php?page=addressUser
+RewriteRule ^mesproduitsvendus$ ./index.php?page=marchandproducts
+
+
 
 
 
