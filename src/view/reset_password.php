@@ -11,7 +11,11 @@ class Reset_PasswordView
 
     public function render()
     {
+        if (isset($_SESSION["session_id"]) && $_SESSION["user_ip"] == $_SERVER["REMOTE_ADDR"] ) {
         require($this->template);
+    }else{
+        header("Location: ./");
+        }
     }
 
 }

@@ -99,6 +99,11 @@ $data = array(
 		"model" => "EspacePirateModel",
 		"view" => "EspacePirateView",
 		"controller" => "EspacePirateController"
+	),
+	"espacemarchand" => array(
+		"model" => "EspaceMarchandModel",
+		"view" => "EspaceMarchandView",
+		"controller" => "EspaceMarchandController"
 	)
 );
 

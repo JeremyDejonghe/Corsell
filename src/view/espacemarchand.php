@@ -1,18 +1,18 @@
 <?php
 
-class EspacePirateView
+class EspaceMarchandView
 {
 
-    public function __construct(EspacePirateController $controller)
+    public function __construct(EspaceMarchandController $controller)
     {
         $this->controller = $controller;
-        $this->template = DIR_TEMPLATE . "espacepirate.php";
+        $this->template = DIR_TEMPLATE . "espacemarchand.php";
     }
 
     public function render()
     {
 
-        if (isset(  $_SESSION["user_id"]) && $_SESSION["user_ip"] == $_SERVER["REMOTE_ADDR"] && $_SESSION["user_category"] == 1) {
+        if (isset($_SESSION["session_id"]) && $_SESSION["user_ip"] == $_SERVER["REMOTE_ADDR"] && $_SESSION["user_category"] == 2) {
             $userInfos= $this->controller->getUserInfos();
             $products=$this->controller->getProductsforUser();
             require($this->template);
