@@ -8,8 +8,14 @@ class ProductView
 
     public function render()
     {
+        $message = "";
         $product = $this->controller->getProduct();
         $categories = $this->controller->getCategoryDetail();
+        if ($this->controller->addProductsCommand()) {
+            header("Location: ./");
+        } else {
+            $message = "Erreur de bdd";
+        }
         require($this->template);
     }
 }
