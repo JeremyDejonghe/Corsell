@@ -28,15 +28,5 @@ class ProductController extends CommonController
         return $res;
     }
 
-    public function addProductsCommand()
-    {
-        $query = $this->model->db->prepare("INSERT INTO products_command (id_products) VALUES :id_products");
-        $query->bindParam(":id_products", $this->model->id, PDO::PARAM_INT);
-        if ($query->execute()) {
-            return true;
-        } else {
-            return false;
-        }
-    }
 }
 
