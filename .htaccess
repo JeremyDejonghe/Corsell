@@ -22,17 +22,19 @@ RewriteRule ^connexion$ ./index.php?page=connexion
 RewriteRule ^construction$ ./construct.php
 RewriteRule ^search$ ./index.php?page=search&%{QUERY_STRING}
 RewriteRule ^logout$ ./logout.php
+
 RewriteRule ^espacepirate$ ./index.php?page=espacepirate
 RewriteRule ^espacemarchand$ ./index.php?page=espacemarchand
-RewriteRule ^espacepirate$ ./index.php?page=espacecorsaire
+RewriteRule ^espacecorsaire$ ./index.php?page=espacecorsaire
+
 RewriteRule ^erre$ ./erre.php
 RewriteRule ^jointhecrew$ ./jointhecrew.php
 
 RewriteRule ^security$ ./index.php?page=security
 RewriteRule ^edit-user$ ./index.php?page=edit_user
 RewriteRule ^edit-password$ ./index.php?page=reset_password
+
 RewriteRule ^moncoffre$ ./index.php?page=moncoffre
-RewriteRule ^espacepirate$ ./index.php?page=espacepirate
 RewriteRule ^corsellmobile$ ./corsellMobile
 RewriteRule ^mescommandes$ ./index.php?page=commandesPirate
 RewriteRule ^mesadresses$ ./index.php?page=addressUser
