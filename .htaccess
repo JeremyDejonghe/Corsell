@@ -37,6 +37,7 @@ RewriteRule ^corsellmobile$ ./corsellMobile
 RewriteRule ^mescommandes$ ./index.php?page=commandesPirate
 RewriteRule ^mesadresses$ ./index.php?page=addressUser
 
+RewriteRule ^addproduct$ ./index.php?page=addproduct
 
 
 
