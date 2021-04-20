@@ -22,7 +22,7 @@ require_once("header-soft.php");
 
                 <div class="form-div-registration">
                     <label for="picture" class="label-form-div-registration">Image </label>
-                    <input type="text" name="picture" id="picture" placeholder="Url de l'image de votre produit" value="<?= isset($data["picture"]) ? $data["picture"] : "" ?>" required>
+                    <input type="file" name="picture" id="picture" placeholder="l'image de votre produit" value="<?= isset($data["picture"]) ? $data["picture"] : "" ?>" required>
                 </div>
 
 
@@ -60,6 +60,7 @@ require_once("header-soft.php");
                 <div class="form-div-registration">
                     <label for="category-select" class="label-form-div-registration">Quel est la catégorie du produit?</label>
                     <select name="category" id="category-select" onchange="selected()">
+                        <option value=""></option>
                         <?php
                         foreach ($categorys as $category) {
                         ?>
@@ -75,14 +76,7 @@ require_once("header-soft.php");
                 <div class="form-div-registration">
                     <label for="subcategory-select" class="label-form-div-registration">Quel est la sous-catégorie du produit?</label>
                     <select name="subcategory" id="subcategory-select">
-                        <?php
-                        foreach ($subcategorys as $subcategory) {
-                        ?>
-
-                            <option data-category="<?= $subcategory["id_category"] ?>" value="<?= $subcategory["id"] ?>" <?= isset($data["subcategory"]) && ($subcategory["id"] == $data["subcategory"]) ? "selected" : "" ?>> <?= $subcategory["name"] ?></option>
-                        <?php
-                        }
-                        ?>
+                       
                     </select>
                 </div>
 
@@ -115,28 +109,32 @@ require_once("header-soft.php");
 <?php
 require_once("footer.php");
 ?>
-<script>
-    let subcategories = document.querySelectorAll('#subcategory-select > option');
-    sessionStorage.setItem("subcategories",subcategories)
-    const selected = function() {
-        console.log(sessionStorage.getItem("subcategories"))
-        const categorySelected = document.getElementById("category-select").value;
-        let newSubcategories = [...subcategories]
-        newSubcategories.forEach(subcategory => {
-            // if (subcategory.getAttribute("data-category") === categorySelected) {
-            //     let option = document.createElement("option")
-            //     option.text = subcategory.text
-            //     option.value = subcategory.value
-            //     document.getElementById("subcategory-select").add(option, null)
 
-            //     console.log(option)
-            // }
-            if (subcategory.getAttribute("data-category") !== categorySelected) {
-                document.getElementById("subcategory-select").remove(subcategory.index)
-            }
+<script src="../assets/js/subcategory.js"></script>
+
+<script>
+    //document.addEventListener("DOMContentLoaded", async () => {
+    const selected = async function() {
+        let subcategories = await fetch("./bin/subcategories.php").then(res => res.json())
+        const categorySelected = document.getElementById("category-select").value;
+        const newSubcategories = subcategories.filter(subcategory => subcategory.id_category == categorySelected);
+        console.log(newSubcategories);
+      
+        document.getElementById("subcategory-select").innerHTML=null;
+
+        newSubcategories.forEach(subcategory => {
+            let option = document.createElement("option")
+            option.text = subcategory.name
+            option.value = subcategory.id
+            document.getElementById("subcategory-select").add(option, null)
+
+            console.log(option)
+
+
         });
 
         // document.getElementById("subcategory-select").add(newSubcategories, null)
 
     }
+    //});
 </script>
