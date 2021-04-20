@@ -41,6 +41,7 @@ RewriteRule ^mesadresses$ ./index.php?page=addressUser
 RewriteRule ^mesproduitsvendus$ ./index.php?page=addressUser
 
 
+RewriteRule ^addproduct$ ./index.php?page=addproduct
 
 
 

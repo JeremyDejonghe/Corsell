@@ -16,19 +16,19 @@ if (isset($_GET["page"]) && !empty($_GET["page"])) {
 
 $data = array(
 	"home" => array(
-        "model" => "HomeModel", 
-        "view" => "HomeView", 
-        "controller" => "HomeController"
-    ),
+		"model" => "HomeModel",
+		"view" => "HomeView",
+		"controller" => "HomeController"
+	),
 	"product" => array(
 		"model" => "ProductModel",
 		"view" => "ProductView",
 		"controller" => "ProductController"
 	),
-	"subcategorydetail"=>array(
-		"model"=>"SubcategorydetailModel",
-		"view"=>"SubcategorydetailView",
-		"controller"=>"SubcategorydetailController"
+	"subcategorydetail" => array(
+		"model" => "SubcategorydetailModel",
+		"view" => "SubcategorydetailView",
+		"controller" => "SubcategorydetailController"
 	),
 	"categories" => array(
 		"model" => "CategoriesModel",
@@ -64,7 +64,7 @@ $data = array(
 		"model" => "EssentialsModel",
 		"view" => "EssentialsView",
 		"controller" => "EssentialsController"
-	), 
+	),
 	"connexion" => array(
 		"model" => "ConnexionModel",
 		"view" => "ConnexionView",
@@ -104,9 +104,14 @@ $data = array(
 		"model" => "EspaceMarchandModel",
 		"view" => "EspaceMarchandView",
 		"controller" => "EspaceMarchandController"
+	),
+	"addproduct" => array(
+		"model" => "AddProductModel",
+		"view" => "AddProductView",
+		"controller" => "AddProductController"
 	)
-);
 
+);
 $find = false;
 foreach ($data as $key => $components) {
 	if ($page == $key) {
