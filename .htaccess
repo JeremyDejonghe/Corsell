@@ -36,6 +36,8 @@ RewriteRule ^edit-password$ ./index.php?page=reset_password
 
 RewriteRule ^moncoffre$ ./index.php?page=moncoffre
 RewriteRule ^corsellmobile$ ./corsellMobile
+RewriteRule ^espacepirate$ ./index.php?page=espacepirate
+RewriteRule ^corsellmobile$ ./corsellmobile.php
 RewriteRule ^mescommandes$ ./index.php?page=commandesPirate
 RewriteRule ^mesadresses$ ./index.php?page=addressUser
 RewriteRule ^mesproduitsvendus$ ./index.php?page=addressUser
