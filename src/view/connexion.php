@@ -16,13 +16,13 @@ class ConnexionView
         if (!empty($_POST)) {
             if($this->controller->validateLogin()) {
                 if($_SESSION["user_category"] == 1){
-                    header("Location: espacePirate"); 
+                    header("Location: espacepirate"); 
                 }
                 elseif($_SESSION["user_category"] == 2){
-                    header("Location: espaceMarchand");
+                    header("Location: espacemarchand");
                 }
                 elseif($_SESSION["user_category"] == 3){
-                    header("Location: espaceCorsaire");
+                    header("Location: espacecorsaire");
                 }
                 else{
                     header("Location: ./");

@@ -8,7 +8,7 @@ require_once("header.php");
 
     <div class="baniere-Usercategories">
         <div class="espaceUser-title">
-            <h1>“Oyé <?= $userInfos["pseudo"] ?> !”</h1>
+            <h1>“Oyé <span><?= $userInfos["pseudo"] ?></span> !”</h1>
             <div class="avatar-user"><img src="<?= $userInfos["avatar"] ?>" alt=""></div>
         </div>
         <div class="user-categories">
