@@ -114,6 +114,16 @@ $data = array(
 		"model" => "AddProductModel",
 		"view" => "AddProductView",
 		"controller" => "AddProductController"
+	),
+	"chest" => array(
+		"model" => "ChestModel",
+		"view" => "ChestView",
+		"controller" => "ChestController"
+	),
+	"chestcommand" => array(
+		"model" => "ChestCommandModel",
+		"view" => "ChestCommandView",
+		"controller" => "ChestCommandController"
 	)
 
 );

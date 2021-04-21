@@ -1,0 +1,13 @@
+.products {
+    display: flex;
+    .product {
+        
+        .product-img {
+            border: 1px solid $secondary_color;
+        }
+        .product-information {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
