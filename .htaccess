@@ -35,15 +35,13 @@ RewriteRule ^edit-password$ ./index.php?page=reset_password
 RewriteRule ^moncoffre$ ./index.php?page=moncoffre
 RewriteRule ^corsellmobile$ ./corsellmobile.php
 RewriteRule ^espacepirate$ ./index.php?page=espacepirate
+
 RewriteRule ^mescommandes$ ./index.php?page=commandesPirate
 RewriteRule ^mesadresses$ ./index.php?page=addressUser
 RewriteRule ^mesproduitsvendus$ ./index.php?page=marchandproducts
-
 RewriteRule ^editproduct&([0-9]+)$ ./index.php?page=editproduct&id=$1
 RewriteRule ^addproduct$ ./index.php?page=addproduct
-
 RewriteRule ^delete&([0-9]+)$ ./delete_product.php?id=$1
-
 RewriteRule ^chestadd&([0-9]+)$ ./chestadd.php?id=$1
 RewriteRule ^chest$ ./index.php?page=chest
 RewriteRule ^chestcommand$ ./index.php?page=chestcommand
