@@ -1784,4 +1784,26 @@ body {
   border: solid #063D40 0.1rem;
 }
 
+.main-access {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  justify-content: center;
+  text-align: center;
+}
+.main-access .img-access {
+  border: solid 1px #063D40;
+  width: 100%;
+}
+
+img {
+  max-width: 600px;
+}
+
+.corsell-strong-access {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -27,6 +27,7 @@ RewriteRule ^espacepirate$ ./index.php?page=espacepirate
 RewriteRule ^espacemarchand$ ./index.php?page=espacemarchand
 RewriteRule ^espacecorsaire$ ./index.php?page=espacecorsaire
 RewriteRule ^erre$ ./erre.php
+RewriteRule ^accessibility$ ./accessibility.php
 RewriteRule ^jointhecrew$ ./jointhecrew.php
 RewriteRule ^security$ ./index.php?page=security
 RewriteRule ^edit-user$ ./index.php?page=edit_user
