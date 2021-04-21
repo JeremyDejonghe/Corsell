@@ -55,13 +55,18 @@
         flex-direction: column;
         
         input,
-        textarea,
         select {
           border-radius: 10px;
           border: $secondary_color solid 1px;
           border-radius: 10px;
           height: 3rem;
       
+        }
+        textarea{
+          border-radius: 10px;
+          border: $secondary_color solid 1px;
+          border-radius: 10px;
+          height: 10rem;
         }
       }
       .button-form-div-registration {
