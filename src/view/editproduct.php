@@ -12,19 +12,15 @@ class EditProductView
             $message = "";
             $errors = [];
             if (!empty($_POST)) {
-
+                $data = $this->controller->getDataForm();
                 if (isset($_FILES["picture"]) && $_FILES["picture"]["error"] === UPLOAD_ERR_OK) {
                     if (!$this->controller->uploadImage($_FILES["picture"])) {
-
                         $errors["message"] = "Le type du fichier est incorrect (.jpg ou .png requis)";
+                    } elseif ($this->controller->editproduct()) {
+                        header("Location: ./");
+                    } else {
+                        $message = "Erreur de bdd";
                     }
-                }
-                $data = $this->controller->getDataForm();
-
-                if ($this->controller->editproduct()) {
-                    header("Location: ./");
-                } else {
-                    $message = "Erreur de bdd";
                 }
             }
             $categorys = $this->controller->getCategory();

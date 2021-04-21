@@ -21,8 +21,9 @@ require_once("header-soft.php");
                     </div>
 
                     <div class="form-div-registration">
+                        <?= $errors["message"] ?>
                         <label for="picture" class="label-form-div-registration">Image </label>
-                        <input type="file" name="picture" id="picture" accept="image/*,.pdf,.jpg,.jpeg" value="<?= isset($data["picture"]) ? $data["picture"] : $product["picture"] ?>" required>
+                        <input type="file" name="picture" id="picture" value="<?= isset($data["picture"]) ? $data["picture"] : $product["picture"] ?>" required>
                     </div>
 
 

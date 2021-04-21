@@ -60,7 +60,6 @@ class AddProductController
         $fileNameArray = explode(".", $fileName);
         $fileExtension = end($fileNameArray);
         $newFileName = md5(time() . $fileName) . "." . $fileExtension;
-        var_dump($newFileName);
 
         $fileDestPath = "./assets/img/{$newFileName}";
 
