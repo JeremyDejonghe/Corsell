@@ -33,14 +33,12 @@ RewriteRule ^edit-user$ ./index.php?page=edit_user
 RewriteRule ^edit-password$ ./index.php?page=reset_password
 
 RewriteRule ^moncoffre$ ./index.php?page=moncoffre
-RewriteRule ^corsellmobile$ ./corsellMobile
-RewriteRule ^espacepirate$ ./index.php?page=espacepirate
 RewriteRule ^corsellmobile$ ./corsellmobile.php
+RewriteRule ^espacepirate$ ./index.php?page=espacepirate
 RewriteRule ^mescommandes$ ./index.php?page=commandesPirate
 RewriteRule ^mesadresses$ ./index.php?page=addressUser
 RewriteRule ^mesproduitsvendus$ ./index.php?page=marchandproducts
 
-RewriteRule ^mesproduitsvendus$ ./index.php?page=addressUser
 RewriteRule ^editproduct&([0-9]+)$ ./index.php?page=editproduct&id=$1
 RewriteRule ^addproduct$ ./index.php?page=addproduct
 
