@@ -43,6 +43,7 @@ RewriteRule ^mesproduitsvendus$ ./index.php?page=marchandproducts
 
 
 
+RewriteRule ^addproduct$ ./index.php?page=addproduct
 
 
 

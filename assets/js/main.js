@@ -1,3 +1,5 @@
+
+
 const myAudio = document.querySelector("#myAudio");
 const noteElement = document.querySelector(".note");
 noteElement.addEventListener("click", () => {   
@@ -10,3 +12,7 @@ noteElement.addEventListener("click", () => {
         myAudio.pause();
     }  
 });
+
+
+   
+    

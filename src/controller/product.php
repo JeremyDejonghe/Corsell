@@ -27,5 +27,7 @@ class ProductController extends CommonController
         $res = $query->fetch();
         return $res;
     }
+
+
 }
 
