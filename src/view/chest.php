@@ -11,6 +11,8 @@ class ChestView
 
     public function render()
     {
+        $products = $this->controller->getChest();
+        $total = $this->controller->getTotal($products);
         require($this->template);
     }
 

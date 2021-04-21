@@ -86,11 +86,21 @@ CREATE TABLE products (
 );
 
 CREATE TABLE products_command (
-    id_command INT PRIMARY KEY AUTO_INCREMENT,
+    id_command INT,
     id_products INT,
     FOREIGN KEY (id_command) REFERENCES commands(id),
-    FOREIGN KEY (id_products) REFERENCES products(id)
+    FOREIGN KEY (id_products) REFERENCES products(id),
+    PRIMARY KEY (id_command, id_products)
 );
+
+INSERT INTO delivery (name)
+VALUES
+("taverne"),
+("coco");
+
+INSERT INTO payment (name)
+VALUES
+("couronnes");
 
 INSERT INTO users_category (name) 
 VALUES
@@ -160,7 +170,7 @@ VALUES
 ("Baril de poudre noire","Powder.jpg","La poudre noire, parfois dénommée poudre à canon ou poudre à fusil, est le plus ancien explosif chimique connu. De couleur noire, elle est constituée d'un mélange déflagrant de soufre, de nitrate de potassium (salpêtre) et de charbon de bois. ",50,0,222,603,1,2,5),
 ("Balle","Bullet.jpg","Une balle est un projectile d'arme à feu d'un calibre inférieur à 20 mm, de type pistolet, carabine, fusil.",150,0,200,1253,1,2,5),
 ("Flèches","Arrow.jpg","Une flèche est une arme de tir, constituée d'un long tube ou fût muni d'une pointe à une extrémité, d'un empennage et une encoche à l'autre, et utilisée principalement pour la chasse et pour la guerre.",120,0,230,456,2,2,5),
-("Carreaux d arbalète","Crossbow-arrow.jpg","Le carreau d'arbalète, ou simplement le carreau ou encore le trait d’arbalètea, est le projectile utilisé avec une arbalète, dont le fer pyramidal à quatre pans a une base carrée.",50,34,120,643,2,2,5),
+("Carreaux d'arbalète","Crossbow-arrow.jpg","Le carreau d'arbalète, ou simplement le carreau ou encore le trait d’arbalètea, est le projectile utilisé avec une arbalète, dont le fer pyramidal à quatre pans a une base carrée.",50,34,120,643,2,2,5),
 ("Radeau en bambou","Raft_Bamboojpg.jpg","Radeau de fortune en bambou.",12,0,1036,2780,2,4,9),
 ("Radeau à voile","Raft_Sail.jpg","Un radeau, désigne à l'origine un assemblage de poutres1. C'est un type d'embarcation basse sur l'eau, souvent sommaire, permettant de naviguer ou d'atteindre la terre ferme, parfois dans des conditions particulières.",80,0,23,223,2,4,9),
 ("Sloop Renard","Fox_Sloop.jpg","Le Renard était un voilier du XIX e siècle, de type cotre à hunier. Il fut le dernier navire armé pour la course par le corsaire malouin Robert Surcouf.",1645,0,5,6,3,4,10),

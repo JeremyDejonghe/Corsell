@@ -37,8 +37,9 @@ RewriteRule ^corsellmobile$ ./corsellMobile
 RewriteRule ^mescommandes$ ./index.php?page=commandesPirate
 RewriteRule ^mesadresses$ ./index.php?page=addressUser
 
+RewriteRule ^chestadd&([0-9]+)$ ./chestadd.php?id=$1
 RewriteRule ^chest$ ./index.php?page=chest
-
+RewriteRule ^chestcommand$ ./index.php?page=chestcommand
 
 
 

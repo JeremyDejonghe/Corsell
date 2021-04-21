@@ -14,7 +14,7 @@ class ProductController extends CommonController
      */
     public function getProduct()
     {
-        $query = $this->model->db->prepare("SELECT p.name as productName, p.picture, p.description, p.price, p.promo, p.quantity ,b.name as productBrand, c.name as productCategory, c.picture as pictureCategory, s.name as productSubcategory, b.id as idBrand, b.picture as pictureBrand, c.id as idCategory, s.id as idSubcategory
+        $query = $this->model->db->prepare("SELECT p.name as productName, p.id, p.picture, p.description, p.price, p.promo, p.quantity ,b.name as productBrand, c.name as productCategory, c.picture as pictureCategory, s.name as productSubcategory, b.id as idBrand, b.picture as pictureBrand, c.id as idCategory, s.id as idSubcategory
         FROM products as p
         inner join category as c 
         on p.id_category = c.id
@@ -27,6 +27,5 @@ class ProductController extends CommonController
         $res = $query->fetch();
         return $res;
     }
-
 }
 

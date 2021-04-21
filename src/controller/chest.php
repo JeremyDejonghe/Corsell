@@ -5,16 +5,24 @@ class ChestController
 
     public function __construct(ChestModel $model)
     {
-        $this->model=$model;
-        
+        $this->model = $model;
     }
 
-    public function getProductsCommand()
+    public function getChest()
     {
-        $query = $this->model->db->prepare("");
+        $id = implode("\",\"", $_SESSION["chest"]);
+        $query = $this->model->db->prepare("SELECT id, name, picture, price FROM products WHERE id IN (\"{$id}\")");
         $query->execute();
-        $res = $query->fetch();
+        $res = $query->fetchAll();
         return $res;
     }
 
+    public function getTotal($products)
+    {
+        $total = 0;
+        foreach($products as $product) {
+            $total += $product["price"];        
+        }
+        return $total;
+    }
 }
