@@ -11,14 +11,14 @@ require_once("header.php");
             <div class="avatar-user"><img src="<?= $userInfos["avatar"] ?>" alt=""></div>
         </div>
         <div class="user-categories">
-            <a href="./mesventes">
+            <a href="./addproduct">
                 <div class="user-category">
                     <div class="img-Usercategory">
-                        <img src="assets/img/EspaceUserImg/caisse.png" alt="">
+                        <img src="assets/img/EspaceUserImg/productMarchand.png" alt="">
                     </div>
                     <div class="title-Usercategory">
-                        <h2>Vos ventes</h2>
-                        <p>Suivre vos ventes</p>
+                        <h2>Vendre un produit</h2>
+                        <p>Ajouter vos produits</p>
                     </div>
                 </div>
             </a>
@@ -50,11 +50,11 @@ require_once("header.php");
             <a href="./mesproduitsvendus">
                 <div class="user-category">
                     <div class="img-Usercategory">
-                        <img src="assets/img/EspaceUserImg/productMarchand.png" alt="">
+                        <img src="assets/img/EspaceUserImg/caisse.png" alt="">
                     </div>
                     <div class="title-Usercategory">
                         <h2>Vos produits</h2>
-                        <p>Gérer vos produits vendus</p>
+                        <p>Gérer vos produits</p>
                     </div>
                 </div>
             </a>

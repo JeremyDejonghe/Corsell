@@ -12,18 +12,12 @@ class MarchandProductsController
 
     public function getMyProducts()
     {
-        $query = $this->model->db->prepare("SELECT id, picture, name FROM products where  id_seller = :id");
+        $query = $this->model->db->prepare("SELECT id, picture, name, price , promo FROM products where  id_seller = :id");
         $query->bindParam(":id", $this->model->idUser);
         $query->execute();
         $res = $query->fetchAll();
         return $res;
     }
 
-    public function deleteProduct(){
-        $query = $this->model->db->prepare("DELETE from products where  id = :id");
-        $query->bindParam(":id", $this->model->id);
-        $query->execute();
-        // $res = $query->fetchAll(); A voir 
-       
-    }
+
 }

@@ -1,23 +1,91 @@
 .products-container {
     background-color: $fonts_secondary_color;
-    padding: 2rem;
+    padding: 8rem 2rem;
+    min-height: 50rem;
     .main-title {
         margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h1 {
+            margin: 0;
+        }
+        .add-product {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.8rem;
+            font-weight: 600;
+            background-color: $secondary_color;
+            color: $fonts_secondary_color;
+            padding: 1rem;
+            border-radius: 1rem;
+            width: 2.5rem;
+            height: 2.5rem;
+        }
     }
     .products-banner {
         display: flex;
         flex-wrap: wrap;
-        a {
-            .elementcard {
-                position: relative;
+
+        .productcard {
+            display: flex;
+            flex-direction: column;
+            margin: 2rem 2rem 0 0;
+
+            .product-img {
+                width: 25rem;
+                height: 25rem;
+
+                img {
+                    width: 100%;
+                    max-height: 100%;
+                    border: $secondary_color solid 0.1rem;
+                }
             }
-            .delete-btn {
-                background-color: $secondary_color;
-                color: $fonts_secondary_color;
-                border-radius: 1rem;
-                position: absolute;
-                bottom: 0;
-                right: 0;
+            .product-info {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                font-weight: 600;
+
+                .product-name {
+                    text-align: center;
+                    font-weight: bold;
+                }
+                .delete-btn {
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    background-color: $secondary_color;
+                    color: $fonts_secondary_color;
+                    padding:  0.7rem;
+                    border-radius: 1rem;
+                    position: absolute;
+                    bottom: 0;
+                    right: 1rem;
+                }
+                .edit-btn {
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    background-color: $secondary_color;
+                    color: $fonts_secondary_color;
+                    padding: 0.7rem;
+                    border-radius: 1rem;
+                    position: absolute;
+                    bottom: 0;
+                    right: 5rem;
+                }
+                .price {
+                    text-decoration: line-through;
+                    
+                }
+                .promo {
+                    color: brown;
+                    font-weight: bold;
+                    width: 65%;
+                }
             }
         }
     }

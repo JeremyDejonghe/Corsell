@@ -33,9 +33,9 @@ require_once("header-soft.php");
                 </div>
 
                 <div class="form-div-registration">
-                    <label for="promo">Promo </label>
-                    <p>Il est très mal vue par notre aimable clientèle d'avoir un prix promo supérieur au prix d'origine </p>
-                    <input type="number" id="promo" name="promo" min="2" value="<?= isset($data["promo"]) ? $data["promo"] : "" ?>">
+                    <label for="promo">Prix avec promotion </label>
+                    <p>Il est très mal vu par notre clientèle d'avoir un prix promo supérieur au prix d'origine </p>
+                    <input type="number" id="promo" name="promo" min="2"  value="<?= isset($data["promo"]) ? $data["promo"] : "" ?>">
                 </div>
 
                 <div class="form-div-registration">
@@ -51,14 +51,14 @@ require_once("header-soft.php");
 
                 <div class="form-div-registration">
                     <label for="description">Description du produit</label>
-                    <p>Ex: Voici une sublime jambe de bois fait 100% en reste d épave</p>
+                    <p>Ex: Voici une sublime jambe de bois faite en reste d'épave.</p>
                     <textarea id="description" name="description" rows="3" cols="20"><?= isset($data["description"]) ? $data["description"] : "" ?></textarea>
                 </div>
 
 
 
                 <div class="form-div-registration">
-                    <label for="category-select" class="label-form-div-registration">Quel est la catégorie du produit?</label>
+                    <label for="category-select" class="label-form-div-registration">Quelle est la catégorie du produit?</label>
                     <select name="category" id="category-select" onchange="selected()">
                         <option value=""></option>
                         <?php
@@ -74,7 +74,7 @@ require_once("header-soft.php");
 
 
                 <div class="form-div-registration">
-                    <label for="subcategory-select" class="label-form-div-registration">Quel est la sous-catégorie du produit?</label>
+                    <label for="subcategory-select" class="label-form-div-registration">Quelle est la sous-catégorie du produit?</label>
                     <select name="subcategory" id="subcategory-select">
                        
                     </select>
@@ -82,7 +82,7 @@ require_once("header-soft.php");
 
 
                 <div class="form-div-registration">
-                    <label for="brand-select" class="label-form-div-registration">Quel est la marque du produit ?</label>
+                    <label for="brand-select" class="label-form-div-registration">Quelle est la marque du produit ?</label>
                     <select name="brands" id="brand-select">
                         <?php
                         foreach ($brands as $brand) {

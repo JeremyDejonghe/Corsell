@@ -1484,25 +1484,90 @@ body {
 
 .products-container {
   background-color: #F5F5F5;
-  padding: 2rem;
+  padding: 8rem 2rem;
+  min-height: 50rem;
 }
 .products-container .main-title {
   margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.products-container .main-title h1 {
+  margin: 0;
+}
+.products-container .main-title .add-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.8rem;
+  font-weight: 600;
+  background-color: #063D40;
+  color: #F5F5F5;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .products-container .products-banner {
   display: flex;
   flex-wrap: wrap;
 }
-.products-container .products-banner a .elementcard {
-  position: relative;
+.products-container .products-banner .productcard {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 2rem 0 0;
 }
-.products-container .products-banner a .delete-btn {
+.products-container .products-banner .productcard .product-img {
+  width: 25rem;
+  height: 25rem;
+}
+.products-container .products-banner .productcard .product-img img {
+  width: 100%;
+  max-height: 100%;
+  border: #063D40 solid 0.1rem;
+}
+.products-container .products-banner .productcard .product-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+.products-container .products-banner .productcard .product-info .product-name {
+  text-align: center;
+  font-weight: bold;
+}
+.products-container .products-banner .productcard .product-info .delete-btn {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   background-color: #063D40;
   color: #F5F5F5;
+  padding: 0.7rem;
   border-radius: 1rem;
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 1rem;
+}
+.products-container .products-banner .productcard .product-info .edit-btn {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #063D40;
+  color: #F5F5F5;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 5rem;
+}
+.products-container .products-banner .productcard .product-info .price {
+  text-decoration: line-through;
+}
+.products-container .products-banner .productcard .product-info .promo {
+  color: brown;
+  font-weight: bold;
+  width: 65%;
 }
 
 /*# sourceMappingURL=main.css.map */

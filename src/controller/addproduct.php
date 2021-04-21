@@ -27,7 +27,7 @@ class AddProductController
     {
         var_dump($this->model);
 
-        $query = $this->model->db->prepare("INSERT INTO products (name,picture,description,price,promo,quantity,id_category,id_brands,id_subcategory) VALUES(:name, :picture, :description, :price, :promo, :quantity, :category, :brands, :subcategory) ");
+        $query = $this->model->db->prepare("INSERT INTO products (name,picture,description,price,promo,quantity,id_category,id_brands,id_subcategory, id_seller) VALUES(:name, :picture, :description, :price, :promo, :quantity, :category, :brands, :subcategory, :id_seller) ");
         $query->bindParam(":name", $this->model->name);
         $query->bindParam(":picture", $this->model->picture);
         $query->bindParam(":description", $this->model->description);
@@ -37,6 +37,7 @@ class AddProductController
         $query->bindParam(":category", $this->model->id_category);
         $query->bindParam(":brands", $this->model->id_brands);
         $query->bindParam(":subcategory", $this->model->id_subcategory);
+        $query->bindParam(":id_seller", $this->model->id_seller);
        
         if ($query->execute()) {
             return true;

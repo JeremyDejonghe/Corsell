@@ -40,10 +40,10 @@ RewriteRule ^mescommandes$ ./index.php?page=commandesPirate
 RewriteRule ^mesadresses$ ./index.php?page=addressUser
 RewriteRule ^mesproduitsvendus$ ./index.php?page=marchandproducts
 
-
-
-
 RewriteRule ^addproduct$ ./index.php?page=addproduct
+
+RewriteRule ^delete&([0-9]+)$ ./delete_product.php?id=$1
+
 
 
 
