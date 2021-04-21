@@ -45,3 +45,13 @@
         }
     }
 }
+@media only screen and (max-width: 768px) {
+    .mainCategories{
+        text-align: center;
+        .cardsCategories{
+            padding: 0;
+        }
+    }  
+    
+          
+}
