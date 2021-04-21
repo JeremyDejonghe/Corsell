@@ -94,4 +94,18 @@ header {
             }
         }
     }
+   
 }
+@media only screen and (max-width: 768px) {
+    .nav1{
+        font-size: 1.5rem;
+        form{
+            margin-bottom: 1rem;
+        }
+    }
+    .nav2{
+        font-size: 1.5rem;
+    }
+      
+
+  }

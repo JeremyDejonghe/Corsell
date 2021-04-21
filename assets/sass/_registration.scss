@@ -85,4 +85,13 @@
       }
     }
   }
+  @media only screen and (max-width: 768px) {
+    .div-p-title-registration{
+      right:1%;
+      max-width: 28%;
+    }
+      select{
+        width: 330px;
+      }
+  }
 }

@@ -8,7 +8,7 @@ require_once("header.php");
         <div class="header-img">
             <img src="assets/img/background-header.png" alt="">
         </div>
-        <div class="cards-ban">
+        <div class="cards-ban-top">
             <div class="card">
                 <h2>Les plus vendus</h2>
                 <div class="card-img">
@@ -39,7 +39,7 @@ require_once("header.php");
     </div>
 
     <section class="home-category">
-        <div class="cards-ban">
+        <div class="cards-ban-bottom">
             <?php foreach ($categories as $category) { ?>
                 <a href="./categorydetail&<?= $category["id"] ?>">
                     <div class="card">
