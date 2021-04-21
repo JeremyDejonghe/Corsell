@@ -129,6 +129,11 @@ $data = array(
 		"model" => "EditProductModel",
 		"view" => "EditProductView",
 		"controller" => "EditProductController"
+	),
+	"mycommands" => array(
+		"model" => "MyCommandsModel",
+		"view" => "MyCommandsView",
+		"controller" => "MyCommandsController"
 	)
 
 );
