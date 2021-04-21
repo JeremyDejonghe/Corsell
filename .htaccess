@@ -36,7 +36,7 @@ RewriteRule ^moncoffre$ ./index.php?page=moncoffre
 RewriteRule ^corsellmobile$ ./corsellmobile.php
 RewriteRule ^espacepirate$ ./index.php?page=espacepirate
 
-RewriteRule ^mescommandes$ ./index.php?page=commandesPirate
+RewriteRule ^mescommandes$ ./index.php?page=mycommands
 RewriteRule ^mesadresses$ ./index.php?page=addressUser
 RewriteRule ^mesproduitsvendus$ ./index.php?page=marchandproducts
 RewriteRule ^editproduct&([0-9]+)$ ./index.php?page=editproduct&id=$1
