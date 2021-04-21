@@ -1784,4 +1784,34 @@ body {
   border: solid #063D40 0.1rem;
 }
 
+.main-needhelp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+}
+.main-needhelp .img-erre {
+  border: solid 1px #063D40;
+  width: 100%;
+}
+
+.div-img-needhelp {
+  max-width: 100%;
+}
+
+.corsell-strong-erre {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.little-needhelp {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .div-img-needhelp img {
+    width: 50rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
