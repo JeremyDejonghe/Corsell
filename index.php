@@ -109,6 +109,11 @@ $data = array(
 		"model" => "AddProductModel",
 		"view" => "AddProductView",
 		"controller" => "AddProductController"
+	),
+	"editproduct" => array(
+		"model" => "EditProductModel",
+		"view" => "EditProductView",
+		"controller" => "EditProductController"
 	)
 
 );

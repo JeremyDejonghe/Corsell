@@ -1252,12 +1252,17 @@ body {
   font-weight: bold;
 }
 .main-registration .container-form-registration .form-registration .form-div-registration input,
-.main-registration .container-form-registration .form-registration .form-div-registration textarea,
 .main-registration .container-form-registration .form-registration .form-div-registration select {
   border-radius: 10px;
   border: #063D40 solid 1px;
   border-radius: 10px;
   height: 3rem;
+}
+.main-registration .container-form-registration .form-registration .form-div-registration textarea {
+  border-radius: 10px;
+  border: #063D40 solid 1px;
+  border-radius: 10px;
+  height: 10rem;
 }
 .main-registration .container-form-registration .form-registration .button-form-div-registration {
   align-self: center;

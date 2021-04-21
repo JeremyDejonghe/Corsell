@@ -9,6 +9,7 @@ require_once("aside.php");
     <div class="element-information">
         <figure>
             <img src="assets/img/<?= !empty($product["picture"]) ? $product["picture"] : "image_placeholer.jpg" ?>" alt="" />
+            </a>
         </figure>
         <div class="product-descriptif">
             <h1><?= $product["productName"] ?></h1>

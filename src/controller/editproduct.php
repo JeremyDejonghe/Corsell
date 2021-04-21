@@ -1,9 +1,10 @@
 <?php
 
-class AddProductController
+class EditProductController
 {
+
     private $model;
-    public function __construct(AddProductModel $model)
+    public function __construct(EditProductModel $model)
     {
         $this->model = $model;
     }
@@ -22,9 +23,36 @@ class AddProductController
             "subcategory" => $this->model->id_subcategory
         );
     }
-    public function addProduct()
+
+
+    // Récupération d'un produit
+
+    public function getproduct()
     {
-        $query = $this->model->db->prepare("INSERT INTO products (name,picture,description,price,promo,quantity,id_category,id_brands,id_subcategory) VALUES(:name, :picture, :description, :price, :promo, :quantity, :category, :brands, :subcategory) ");
+
+        $query = $this->model->db->prepare("SELECT name,picture,description,price,promo,quantity,id_category,id_brands,id_subcategory 
+            FROM products
+            WHERE id=:id");
+        $query->bindParam(":id", $this->model->id);
+        $query->execute();
+        $res = $query->fetch();
+
+        return $res;
+    }
+
+
+    public function editproduct()
+    {
+        $query = $this->model->db->prepare("SELECT id,picture FROM products WHERE id=:id");
+        $query->bindParam(":id", $this->model->id);
+        $query->execute();
+        $product_del = $query->fetch();
+        $picture_del = "./assets/img/" . $product_del["picture"];
+        unlink($picture_del);
+
+        $query = $this->model->db->prepare("UPDATE products 
+                    SET name=:name, picture=:picture, description=:description, price=:price, promo=:promo, quantity=:quantity, id_category=:category, id_brands=:brands, id_subcategory=:subcategory
+                    WHERE id=:id");
         $query->bindParam(":name", $this->model->name);
         $query->bindParam(":picture", $this->model->picture);
         $query->bindParam(":description", $this->model->description);
@@ -34,18 +62,15 @@ class AddProductController
         $query->bindParam(":category", $this->model->id_category);
         $query->bindParam(":brands", $this->model->id_brands);
         $query->bindParam(":subcategory", $this->model->id_subcategory);
+        $query->bindParam(":id", $this->model->id);
 
         if ($query->execute()) {
             return true;
         } else {
-            return false;
+            return $query->errorInfo();
         }
     }
 
-
-    /**
-     * Upload d'une image pour le matelas dans le dossier assets/img/products
-     */
     public function uploadImage($file)
     {
 
@@ -56,7 +81,6 @@ class AddProductController
         $fileNameArray = explode(".", $fileName);
         $fileExtension = end($fileNameArray);
         $newFileName = md5(time() . $fileName) . "." . $fileExtension;
-        var_dump($newFileName);
 
         $fileDestPath = "./assets/img/{$newFileName}";
 
