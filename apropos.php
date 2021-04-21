@@ -25,8 +25,6 @@ require_once("templates/header.php");
         <h2>En apprendre plus sur leur créateur</h2>
 
         <div class="trinome-apropos">
-            <div>
-
                 <div>
                     <h3>Jérémy Dejonghe</h3>
                     <div>
@@ -50,7 +48,7 @@ require_once("templates/header.php");
                         <div>
                             <h4>En quelques mots</h4>
                             <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui atque accusamus praesentium, optio consectetur accusantium nihil molestiae saepe quas maiores ab error, aspernatur nulla doloribus voluptatum voluptatibus? Porro, labore dicta.</p>
+                                <p>Bonjour, si je devais me décrire en quelques mots?</br> Je dirais que je suis une personne qui aime relever des défis aussi bien dans mon travail que dans mes passions,que j'aime rire et faire rire les personnes qui m'entoure enfin je dirais que j'aime apprendre et transmettre au près des autres. </p>
                             </div>
                             <div>
                                 <h4>quelques liens</h4>
@@ -78,8 +76,21 @@ require_once("templates/header.php");
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </div>
+        <div>
+            
+                    <h4>Jean Ceyriun</h4>
+                    <p>avec l 'aimable aide de Jean Ceyriun pour le logo et les fuasses pubs </p>
+                    <div>
+                            <div>
+                                <h4>quelques liens</h4>
+                                <a href="https://www.linkedin.com/in/alexandre-roy-1086a96a/">Lien linkedin</a>
+                                <a href="https://alexandre-roy.web.app/">Site perso</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
     </div>
 
 </div>

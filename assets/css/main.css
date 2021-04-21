@@ -1525,10 +1525,15 @@ body {
   align-items: center;
   padding: 3rem;
 }
+.main-apropos a {
+  margin-right: 2rem;
+}
 
 .trinome-apropos {
   display: flex;
-  flex-direction: column;
+}
+.trinome-apropos p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
