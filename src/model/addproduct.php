@@ -19,6 +19,7 @@ class AddProductModel
             $this->id_category = trim(strip_tags($_POST["category"]));
             $this->id_brands= trim(strip_tags($_POST["brands"]));
             $this->id_subcategory = trim(strip_tags($_POST["subcategory"]));
+            $this->id_seller = trim(strip_tags($_SESSION["user_id"]));
 
         }
     }

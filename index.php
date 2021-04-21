@@ -105,10 +105,25 @@ $data = array(
 		"view" => "EspaceMarchandView",
 		"controller" => "EspaceMarchandController"
 	),
+	"marchandproducts" => array(
+		"model" => "MarchandProductsModel",
+		"view" => "MarchandProductsView",
+		"controller" => "MarchandProductsController"
+	),
 	"addproduct" => array(
 		"model" => "AddProductModel",
 		"view" => "AddProductView",
 		"controller" => "AddProductController"
+	),
+	"chest" => array(
+		"model" => "ChestModel",
+		"view" => "ChestView",
+		"controller" => "ChestController"
+	),
+	"chestcommand" => array(
+		"model" => "ChestCommandModel",
+		"view" => "ChestCommandView",
+		"controller" => "ChestCommandController"
 	)
 
 );

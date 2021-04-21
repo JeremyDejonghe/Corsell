@@ -28,6 +28,7 @@ class ConnexionController
             $_SESSION["user_ip"] = $_SERVER["REMOTE_ADDR"];
             $_SESSION["user_category"] =$result["id_users_category"];
             $_SESSION["user_id"] = $result["id"];
+            $_SESSION["chest"] = array();
 
             return true;
         }
