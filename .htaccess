@@ -26,7 +26,7 @@ RewriteRule ^logout$ ./logout.php
 RewriteRule ^espacepirate$ ./index.php?page=espacepirate
 RewriteRule ^espacemarchand$ ./index.php?page=espacemarchand
 RewriteRule ^espacecorsaire$ ./index.php?page=espacecorsaire
-
+RewriteRule ^apropos$ ./apropos.php
 RewriteRule ^erre$ ./erre.php
 RewriteRule ^jointhecrew$ ./jointhecrew.php
 
