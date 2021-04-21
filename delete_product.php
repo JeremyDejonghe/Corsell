@@ -25,6 +25,9 @@ if (isset($_SESSION["user_id"]) && $_SESSION["user_ip"] == $_SERVER["REMOTE_ADDR
 
             header("Location: espacemarchand");
         }
+    } else {
+
+        header("Location: ./");
     }
 } else {
 
