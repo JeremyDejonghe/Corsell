@@ -27,6 +27,8 @@ RewriteRule ^espacepirate$ ./index.php?page=espacepirate
 RewriteRule ^espacemarchand$ ./index.php?page=espacemarchand
 RewriteRule ^espacecorsaire$ ./index.php?page=espacecorsaire
 RewriteRule ^erre$ ./erre.php
+RewriteRule ^accessibility$ ./accessibility.php
+RewriteRule ^needhelp$ ./needhelp.php
 RewriteRule ^jointhecrew$ ./jointhecrew.php
 RewriteRule ^security$ ./index.php?page=security
 RewriteRule ^edit-user$ ./index.php?page=edit_user
@@ -36,7 +38,7 @@ RewriteRule ^moncoffre$ ./index.php?page=moncoffre
 RewriteRule ^corsellmobile$ ./corsellmobile.php
 RewriteRule ^espacepirate$ ./index.php?page=espacepirate
 
-RewriteRule ^mescommandes$ ./index.php?page=commandesPirate
+RewriteRule ^mescommandes$ ./index.php?page=mycommands
 RewriteRule ^mesadresses$ ./index.php?page=addressUser
 RewriteRule ^mesproduitsvendus$ ./index.php?page=marchandproducts
 RewriteRule ^editproduct&([0-9]+)$ ./index.php?page=editproduct&id=$1

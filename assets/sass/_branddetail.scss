@@ -24,8 +24,14 @@
                 border: solid 0.2rem $secondary-color;
             }
         }
-        .brand-description{
-            padding: 5rem 25rem;
-        }
+        
+    }
+}
+.brand-description{
+    padding: 5rem 25rem;
+}
+@media only screen and (max-width: 768px) {
+    .brand-description{
+        padding: 5rem ;
     }
 }

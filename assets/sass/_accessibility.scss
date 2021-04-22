@@ -1,0 +1,24 @@
+.main-access{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    justify-content: center;
+    .img-access{
+        border:solid 1px $secondary_color ;
+        width: 100%;
+    }
+}
+
+    img{
+        max-width: 600px;
+    }
+.p-main-access{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.corsell-strong-access{
+    font-weight: 600;
+    font-size: 2rem;
+}

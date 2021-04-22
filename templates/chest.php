@@ -2,32 +2,34 @@
 require_once("header.php");
 ?>
 
-<main>
-    <h1>Contenu du coffre</h1>
-    <div class="products">
+<main class="chest-container">
+    <div class="chest-title">
+        <h1>Contenu du coffre</h1>
+    </div>
+    <div class="chest-products">
         <?php foreach ($products as $product) { ?>
-
             <div class="product">
-                <div class="product-img">
-                    <a href="./product&<?= $product["id"] ?>">
+                <a href="./product&<?= $product["id"] ?>">
+                    <div class="product-img">
                         <img src="assets/img/<?= $product["picture"] ?>" alt="">
-                    </a>
-                </div>
+                    </div>
+                </a>
                 <div class="product-information">
                     <p><?= $product["name"] ?></p>
-                    <p><?= $product["price"] ?> Couronnes</p>
+                    <p class="price"><?= $product["price"] ?> Couronnes</p>
                 </div>
             </div>
 
         <?php } ?>
     </div>
-</main>
+
 <div class="total">
-    <h2>Total : <?= $total ?> Couronnes</h2>
-    <a href="./chestcommand">
-        <p>Passer commande</p>
+    <h2>Total :  <span><?= $total ?> Couronnes</span></h2>
+    <a class="btn-command" href="./chestcommand">
+        Passer commande
     </a>
 </div>
+</main>
 <?php
 require_once("footer.php");
 ?>

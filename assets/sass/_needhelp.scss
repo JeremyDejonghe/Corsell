@@ -1,0 +1,31 @@
+.main-needhelp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    .img-erre{
+        border:solid 1px $secondary_color ;
+        width: 100%;
+    }
+}
+
+.div-img-needhelp{
+    max-width: 100%;
+    img{
+        border: solid 1px $secondary_color;
+    }
+}
+.corsell-strong-erre{
+    font-weight: 600;
+    font-size: 2rem;
+}
+.little-needhelp{
+    font-size: 1rem;
+}
+@media only screen and (max-width: 768px) {
+    .div-img-needhelp{
+        img{
+            width: 50rem;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-<footer>
+<footer class ="footer-container">
     <div class="footer-block">
         <p class="-title">Pour mieux nous connaître</p>
         <a href="./construction">

@@ -1,28 +1,47 @@
-.mainBrands{
+.mainBrands {
     display: flex;
     flex-direction: column;
     flex-basis: 85%;
     padding: 10rem;
     background-color: #f5f5f5;
-    .titleBrands{
+    .titleBrands {
         display: flex;
         justify-content: center;
         margin-bottom: 8rem;
-h1{
-    font-family: 'Spectral';
-}
+        h1 {
+            font-family: "Spectral";
+        }
     }
-    .cardsBrands{
+    .cardsBrands {
         display: flex;
         justify-content: space-around;
         margin-bottom: 5rem;
-        .cardBrand{
-           border: 0.2rem solid $secondary-color;
+        .cardBrand {
+            border: 0.2rem solid $secondary-color;
             height: 20rem;
-            img{
-                background-color: #E2E2E2;
+            img {
+                background-color: #e2e2e2;
                 height: 100%;
             }
         }
     }
+}
+@media only screen and (max-width: 768px) {
+   
+    .cardsBrands {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        a{
+            
+            margin-bottom: 2rem;
+            .cardBrand{
+                img{
+                    width: 200px;
+                }
+            }
+        }
+    }
+
 }
