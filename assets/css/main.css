@@ -623,6 +623,7 @@ body {
   max-width: 100%;
 }
 .banner img {
+  max-width: none;
   width: 100%;
   border: solid 0.1rem #063D40;
 }
