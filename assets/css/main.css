@@ -1050,7 +1050,6 @@ body {
 }
 
 .container-subcategorydetail {
-  min-width: 60%;
   display: flex;
   flex-direction: column;
 }
@@ -1065,11 +1064,15 @@ body {
 }
 .container-subcategorydetail .container-img-subcategorydetail .div-subcategorydetail {
   position: relative;
+  margin-top: 2rem;
 }
 .container-subcategorydetail .container-img-subcategorydetail .div-subcategorydetail h2 {
   text-align: center;
+  font-family: "Spectral", serif;
   margin: 0;
   padding: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 .container-subcategorydetail .container-img-subcategorydetail .div-subcategorydetail .img-subcategorydetail {
   width: 200px;
@@ -1557,18 +1560,16 @@ body {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .espaceUser-container .baniere-products a .product-item img {
   width: 20rem;
   border: solid 0.1rem #063D40;
 }
 .espaceUser-container .baniere-products a .product-item h2 {
+  margin-top: 1rem;
   text-align: center;
   font-family: "Spectral", serif;
-  font-size: 2.2rem;
-  margin: 0;
+  font-size: 1.8rem;
 }
 
 .container-corsellmobile {
@@ -1815,6 +1816,7 @@ body {
   width: 20rem;
 }
 .mycommands-container .commands .command-card .command-img img {
+  border: solid 0.1rem #063D40;
   width: 100%;
 }
 .mycommands-container .commands .command-card .command-description {
@@ -1823,6 +1825,7 @@ body {
 }
 .mycommands-container .commands .command-card .command-description p {
   font-weight: 600;
+  font-size: 1.8rem;
 }
 
 .main-access {

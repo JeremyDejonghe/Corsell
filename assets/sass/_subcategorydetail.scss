@@ -25,13 +25,12 @@
 }
 
 .container-subcategorydetail {
-    min-width: 60%;
+    
     display: flex;
 
     flex-direction: column;
     .container-img-subcategorydetail {
         display: flex;
-
         flex-wrap: wrap;
         justify-content: space-around;
         a {
@@ -40,12 +39,15 @@
         }
         .div-subcategorydetail {
             position: relative;
+            margin-top: 2rem;
 
             h2 {
                 text-align: center;
-                // background: $primary_color;
+                font-family: $text_font;
                 margin: 0;
                 padding: 1rem;
+                font-size: 1.8rem;
+                font-weight: 600;
             }
             .img-subcategorydetail {
                 width: 200px;
