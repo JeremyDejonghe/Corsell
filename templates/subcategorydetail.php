@@ -16,7 +16,7 @@ require_once("aside.php");
                 ?>
                     <div class="div-title-subcategorydetail">
                         <h1><?= $name ?></h1>
-                        <p>Voici tout les produit de notre sous-catégorie <?= $name ?></p>
+                        <p>Voici tous les produits de notre sous-catégorie <?= $name ?></p>
                     </div>
                 <?php
                 }
