@@ -71,6 +71,7 @@ margin-top: 5rem;
         padding-bottom: 12rem;
         max-width: 100%;
         img {
+            max-width: none;
             width: 100%;
             border: solid 0.1rem $secondary-color;
         }

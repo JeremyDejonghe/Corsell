@@ -103,17 +103,17 @@
                 padding: 1rem;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
+               
                 img {
                     width: 20rem;
                     border: solid 0.1rem $secondary_color;
                 }
                 h2 {
+                    margin-top: 1rem;
                     text-align: center;
                     font-family: $text_font;
-                    font-size: 2.2rem;
-                    margin: 0;
+                    font-size: 1.8rem;
+                  
                 }
             }
         }
