@@ -1798,6 +1798,9 @@ body {
 .div-img-needhelp {
   max-width: 100%;
 }
+.div-img-needhelp img {
+  border: solid 1px #063D40;
+}
 
 .corsell-strong-erre {
   font-weight: 600;

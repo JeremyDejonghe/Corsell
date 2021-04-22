@@ -11,6 +11,9 @@
 
 .div-img-needhelp{
     max-width: 100%;
+    img{
+        border: solid 1px $secondary_color;
+    }
 }
 .corsell-strong-erre{
     font-weight: 600;
