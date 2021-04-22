@@ -22,10 +22,10 @@
     </div>
     <div class="footer-block">
         <p class="-title">Besoin d'aide ?</p>
-        <a href="./construction">
+        <a href="./needhelp">
             <p>Service Client</p>
         </a>
-        <a href="./construction">
+        <a href="./accessibility">
             <p>Accessibilité</p>
         </a>
         <a href="./erre">

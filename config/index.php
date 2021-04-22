@@ -2,7 +2,7 @@
 require_once("db.php");
 
 // Définir des constantes pour stocker les chemins vers différents dossiers
-define("HOST", "http://localhost/COR-SELL/");
+define("HOST", "http://localhost/corsell");
 define("DIR_TEMPLATE", "templates/");
 define("DIR_APPLICATION", "src/");
 define("DIR_MODEL", DIR_APPLICATION."model/");

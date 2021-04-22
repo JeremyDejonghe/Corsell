@@ -20,7 +20,7 @@ if (isset($_SESSION["user_category"]) && $_SESSION["user_category"] == 1) {
     <title>Cor-Sell</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="icon" href="/assets/img/favicon-corsell.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap" rel="stylesheet">
 </head>
 
