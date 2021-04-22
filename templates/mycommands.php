@@ -8,7 +8,7 @@ require_once("header.php");
         <h1>Vos dernières commandes</h1>
     </div>
     <?php foreach($commands as $command) { ?>
-    <p>Votre commande : <?= md5($command["id"]) ?></p>
+    <p><span>Votre commande :</span> <?= md5($command["id"]) ?></p>
     <div class="commands">
         <?php foreach ($products[$command["id"]] as $product) { ?>
             <div class="command-card">
