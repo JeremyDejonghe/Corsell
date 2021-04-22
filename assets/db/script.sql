@@ -148,11 +148,6 @@ VALUES
 ('Pièce détachée',4),
 ('Navale',2);
 
-INSERT INTO users (firstname, lastname, pseudo, adress, age, email, password, avatar, id_users_category)
-VALUES
-("Barbe", "Rousse", "Zouzou59", "16 rue du Rhum-33160-Tortuga", 19, "joris@poupoune.fr", "Azerty1*", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Piratey%2C_vector_version.svg/1200px-Piratey%2C_vector_version.svg.png", 1),
-("Barbe", "Noire", "Pazouzou59", "16 rue du Rhum-33160-Tortuga", 19, "jorispoupoune@gmail.com", "Azerty1*", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Piratey%2C_vector_version.svg/1200px-Piratey%2C_vector_version.svg.png", 2);
-
 INSERT INTO products (name,picture,description,price,promo,quantity,sell_number,id_brands,id_category,id_subcategory)
 VALUES
 ("Gourdin","Bludgeon.jpg","Un gourdin est une des armes les plus primitives, arme dite de mêlée ou de contact qui semble avoir été universellement utilisée par l'homme.",76,0,32,12,1,2,4),
