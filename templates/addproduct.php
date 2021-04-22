@@ -11,7 +11,7 @@ require_once("header-soft.php");
 
     <div class="container-form-registration">
         <h1>Ajouter un produit</h1>
-        <?= $message ?>
+        
         <form action="" enctype="multipart/form-data" method="post" class="form-registration">
             <div class="divone-form-registration">
 
@@ -21,7 +21,7 @@ require_once("header-soft.php");
                 </div>
 
                 <div class="form-div-registration">
-                    <?= $errors["message"] ?>
+                    <?= $message ?>
                     <label for="picture" class="label-form-div-registration">Image </label>
                     <input type="file" name="picture" id="picture" placeholder="l'image de votre produit" value="<?= isset($data["picture"]) ? $data["picture"] : "" ?>" required>
                 </div>

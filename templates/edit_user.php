@@ -10,7 +10,7 @@ require_once("header-soft.php");
 
     <div class="container-form-registration">
         <h1>Éditer votre compte</h1>
-        <?=$message?>
+        <?= $message ?>
         <form action="" method="post" class="form-registration">
             <div class="divone-form-registration">
                 <div class="form-div-registration">
