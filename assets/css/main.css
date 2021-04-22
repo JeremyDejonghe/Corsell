@@ -1705,6 +1705,7 @@ body {
 
 .chest-container {
   padding: 2rem 6rem;
+  height: 70rem;
 }
 .chest-container .chest-title {
   padding: 2rem 0;
