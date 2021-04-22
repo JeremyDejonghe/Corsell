@@ -58,7 +58,7 @@ if (isset($_SESSION["user_category"]) && $_SESSION["user_category"] == 1) {
             <?php } ?>
             <?php if (!empty($_SESSION["user_name"])) { ?>
                 <div class="command">
-                    <a href="./command">
+                    <a href="./mescommandes">
                         <p>Vos</p>
 
                         <p>Commandes</p>
