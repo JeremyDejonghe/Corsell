@@ -1035,6 +1035,7 @@ body {
   padding: 3rem;
   flex-basis: 85%;
   background-color: #f5f5f5;
+  min-height: 60rem;
 }
 .categories-container .elements-container .element-title h1 {
   margin: 0;
