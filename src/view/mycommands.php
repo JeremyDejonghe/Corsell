@@ -13,7 +13,8 @@ class MyCommandsView
     {
 
         if (isset($_SESSION["user_id"]) && $_SESSION["user_ip"] == $_SERVER["REMOTE_ADDR"] && $_SESSION["user_category"] == 1) {
-            $products=$this->controller->getProductsCommands();
+            $commands = $this->controller->getCommands();
+            $products=$this->controller->getIdCommands($commands);
             require($this->template);
         } else {
             header("Location: ./");
