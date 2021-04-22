@@ -1406,6 +1406,10 @@ body {
   font-size: 2rem;
 }
 
+.p-main-erre {
+  max-width: 905px;
+}
+
 .main-jointhecrew {
   display: flex;
   flex-direction: column;
