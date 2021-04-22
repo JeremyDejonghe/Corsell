@@ -2,51 +2,51 @@
 RewriteEngine on
 
 # Règle de réécriture d'url :
-RewriteRule ^categories$ /index.php?page=categories
-RewriteRule ^categorydetail$ /index.php?page=categorydetail
-RewriteRule ^categorydetail&([0-9]+)$ /index.php?page=categorydetail&id=$1
-RewriteRule ^subcategorydetail&([0-9]+)$ /index.php?page=subcategorydetail&id=$1
-RewriteRule ^product&([0-9]+)$ /index.php?page=product&id=$1
-RewriteRule ^coco$ /coco.php
-RewriteRule ^snap-ship$ /snap-ship.php
-RewriteRule ^faceborgne$ /faceborgne.php
-RewriteRule ^brands$ /index.php?page=brands
-RewriteRule ^bestsells$ /index.php?page=bestsells
-RewriteRule ^lastnew$ /index.php?page=lastnew
-RewriteRule ^registration$ /index.php?page=registration
+RewriteRule ^categories$ ./index.php?page=categories
+RewriteRule ^categorydetail$ ./index.php?page=categorydetail
+RewriteRule ^categorydetail&([0-9]+)$ ./index.php?page=categorydetail&id=$1
+RewriteRule ^subcategorydetail&([0-9]+)$ ./index.php?page=subcategorydetail&id=$1
+RewriteRule ^product&([0-9]+)$ ./index.php?page=product&id=$1
+RewriteRule ^coco$ ./coco.php
+RewriteRule ^snap-ship$ ./snap-ship.php
+RewriteRule ^faceborgne$ ./faceborgne.php
+RewriteRule ^brands$ ./index.php?page=brands
+RewriteRule ^bestsells$ ./index.php?page=bestsells
+RewriteRule ^lastnew$ ./index.php?page=lastnew
+RewriteRule ^registration$ ./index.php?page=registration
 
-RewriteRule ^brands$ /index.php?page=brands
-RewriteRule ^brands&([0-9]+)$ /index.php?page=branddetail&id=$1
-RewriteRule ^essentials$ /index.php?page=essentials
-RewriteRule ^connexion$ /index.php?page=connexion
-RewriteRule ^construction$ /construct.php
-RewriteRule ^search$ /index.php?page=search&%{QUERY_STRING}
-RewriteRule ^logout$ /logout.php
+RewriteRule ^brands$ ./index.php?page=brands
+RewriteRule ^brands&([0-9]+)$ ./index.php?page=branddetail&id=$1
+RewriteRule ^essentials$ ./index.php?page=essentials
+RewriteRule ^connexion$ ./index.php?page=connexion
+RewriteRule ^construction$ ./construct.php
+RewriteRule ^search$ ./index.php?page=search&%{QUERY_STRING}
+RewriteRule ^logout$ ./logout.php
 
-RewriteRule ^espacepirate$ /index.php?page=espacepirate
-RewriteRule ^espacemarchand$ /index.php?page=espacemarchand
-RewriteRule ^espacecorsaire$ /index.php?page=espacecorsaire
-RewriteRule ^erre$ /erre.php
-RewriteRule ^accessibility$ /accessibility.php
-RewriteRule ^needhelp$ /needhelp.php
-RewriteRule ^jointhecrew$ /jointhecrew.php
-RewriteRule ^security$ /index.php?page=security
-RewriteRule ^edit-user$ /index.php?page=edit_user
-RewriteRule ^edit-password$ /index.php?page=reset_password
+RewriteRule ^espacepirate$ ./index.php?page=espacepirate
+RewriteRule ^espacemarchand$ ./index.php?page=espacemarchand
+RewriteRule ^espacecorsaire$ ./index.php?page=espacecorsaire
+RewriteRule ^erre$ ./erre.php
+RewriteRule ^accessibility$ ./accessibility.php
+RewriteRule ^needhelp$ ./needhelp.php
+RewriteRule ^jointhecrew$ ./jointhecrew.php
+RewriteRule ^security$ ./index.php?page=security
+RewriteRule ^edit-user$ ./index.php?page=edit_user
+RewriteRule ^edit-password$ ./index.php?page=reset_password
 
-RewriteRule ^moncoffre$ /index.php?page=moncoffre
-RewriteRule ^corsellmobile$ /corsellmobile.php
-RewriteRule ^espacepirate$ /index.php?page=espacepirate
+RewriteRule ^moncoffre$ ./index.php?page=moncoffre
+RewriteRule ^corsellmobile$ ./corsellmobile.php
+RewriteRule ^espacepirate$ ./index.php?page=espacepirate
 
-RewriteRule ^mescommandes$ /index.php?page=mycommands
-RewriteRule ^mesadresses$ /index.php?page=addressUser
-RewriteRule ^mesproduitsvendus$ /index.php?page=marchandproducts
-RewriteRule ^editproduct&([0-9]+)$ /index.php?page=editproduct&id=$1
-RewriteRule ^addproduct$ /index.php?page=addproduct
-RewriteRule ^delete&([0-9]+)$ /delete_product.php?id=$1
-RewriteRule ^chestadd&([0-9]+)$ /chestadd.php?id=$1
-RewriteRule ^chest$ /index.php?page=chest
-RewriteRule ^chestcommand$ /index.php?page=chestcommand
+RewriteRule ^mescommandes$ ./index.php?page=mycommands
+RewriteRule ^mesadresses$ ./index.php?page=addressUser
+RewriteRule ^mesproduitsvendus$ ./index.php?page=marchandproducts
+RewriteRule ^editproduct&([0-9]+)$ ./index.php?page=editproduct&id=$1
+RewriteRule ^addproduct$ ./index.php?page=addproduct
+RewriteRule ^delete&([0-9]+)$ ./delete_product.php?id=$1
+RewriteRule ^chestadd&([0-9]+)$ ./chestadd.php?id=$1
+RewriteRule ^chest$ ./index.php?page=chest
+RewriteRule ^chestcommand$ ./index.php?page=chestcommand
 
 
 
