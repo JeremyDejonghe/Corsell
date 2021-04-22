@@ -443,6 +443,7 @@ header .logo img {
 }
 header .nav1 {
   padding: 2rem 13rem;
+  font-size: 1.6rem;
   display: flex;
   flex-wrap: wrap;
   color: #2D2D2D;
@@ -467,6 +468,10 @@ header .nav1 .search input {
   height: 3.5rem;
   border-radius: 0.5rem;
   border: 0.2rem solid #063D40;
+}
+header .nav1 .bonjour {
+  display: flex;
+  flex-wrap: wrap;
 }
 header .nav1 .bonjour a p span {
   font-weight: 600;

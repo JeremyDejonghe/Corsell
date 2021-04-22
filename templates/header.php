@@ -41,7 +41,7 @@ if (isset($_SESSION["user_category"]) && $_SESSION["user_category"] == 1) {
             <?php if (!empty($_SESSION["user_name"])) { ?>
                 <div class="bonjour">
                     <a href="./<?= $url ?>">
-                        <p>Bonjour, <span><?= $_SESSION["user_name"] ?></span></p>
+                        <p>Yarg !  <span><?= $_SESSION["user_name"] ?></span></p>
 
                         <p>Compte</p>
                     </a>
@@ -50,7 +50,7 @@ if (isset($_SESSION["user_category"]) && $_SESSION["user_category"] == 1) {
             <?php } else { ?>
                 <div class="bonjour">
                     <a href="./connexion">
-                        <p>Bonjour, <span>Identifiez-vous</span></p>
+                        <p>Yarg ! <span>Identifiez-vous</span></p>
 
                         <p>Compte</p>
                     </a>

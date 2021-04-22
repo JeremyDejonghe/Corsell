@@ -17,6 +17,7 @@ header {
     }
     .nav1 {
         padding: 2rem 13rem;
+        font-size: 1.6rem;
         a:hover {
             text-decoration: underline;
         }
@@ -46,10 +47,13 @@ header {
             }
         }
         .bonjour {
+            display: flex;
+            flex-wrap: wrap;
             a {
                 p {
                     span {
                         font-weight: 600;
+                       
                     }
                 }
             }
