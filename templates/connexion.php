@@ -19,7 +19,7 @@ require_once("header-soft.php");
                 <input type="password" name="password" id="inputPassword" >
             </div>
             <p>En passant votre commande, vous acceptez <span>les Conditions générales de vente</span> de Cor-sell.</p>
-            <p class="p-reset"><a href="">Mot de passe oublié ?</a></p>
+            <!-- <p class="p-reset"><a href="">Mot de passe oublié ?</a></p> -->
             <input class="btn-valid" type="submit" value="Se connecter">
         </form>
     </div>
